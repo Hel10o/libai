@@ -1,0 +1,33 @@
+{
+  "input_name": "附件1.xlsx",
+  "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+  "sheet_names": [
+    "Sheet1"
+  ],
+  "headers": [
+    "时间",
+    "温度",
+    "水分浓度"
+  ],
+  "data_rows": 241,
+  "time_min_s": 0.0,
+  "time_max_s": 14400.0,
+  "time_steps_s": [
+    60.0
+  ],
+  "missing": 0,
+  "duplicate_times": 0,
+  "temperature_minmax_degC": [
+    28.0,
+    50.246
+  ],
+  "environment_C_minmax": [
+    0.01963,
+    0.05025
+  ],
+  "temperature_down_steps": 95,
+  "environment_C_down_steps": 80,
+  "interpretation": "External forcing only, not internal response observations",
+  "units_source": "Problem appendix 1; xlsx headings contain no unit strings"
+}

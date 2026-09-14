@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\finalize_q4.py",
+    "--base",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 1.570849895477295,
+  "outputs": {
+    "project/q4_complete_delivery/v1/output/end_event.json": "503dab727a30fc42e70262f880e736540986574dd50947b3744abec152ee7325",
+    "project/q4_complete_delivery/v1/output/table6_unrounded.csv": "cf4eafa27b9fc14a981a561a0c10a303340d2b8adbcc1e1b71403ddd60e27c47"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\geometry_checks.py",
+    "--out-dir",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\validation\\algebra"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 1.368650197982788,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/algebra/jacobian_flux_checks.json": "b04d8d45f05c6bbbc03ee58cdfbf02e76f35009471a88b2817f9cf97804ed961",
+    "project/q4_complete_delivery/v1/validation/algebra/dimension_reduction_check.json": "fae675f1aaaba4ca35cc67760a59650877c1c080e3b18219bff664016a781131"
+  }
+}

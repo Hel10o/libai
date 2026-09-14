@@ -1,0 +1,683 @@
+{
+  "status": "PASS",
+  "scope": "Cold-start package-only numerical reproduction and portable workbook read-back",
+  "paper_numeric_cells": 261,
+  "paper_tables": {
+    "q1_temperature": {
+      "pass": true,
+      "numeric_cells": 42
+    },
+    "q1_moisture": {
+      "pass": true,
+      "numeric_cells": 42
+    },
+    "q2_temperature": {
+      "pass": true,
+      "numeric_cells": 36
+    },
+    "q2_moisture": {
+      "pass": true,
+      "numeric_cells": 36
+    },
+    "q3_moisture": {
+      "pass": true,
+      "numeric_cells": 60
+    },
+    "q4_moisture": {
+      "pass": true,
+      "numeric_cells": 45
+    }
+  },
+  "claims": [
+    {
+      "name": "Q3 critical seconds",
+      "actual": 206906.38993234077,
+      "reference": 206906.389932328,
+      "absolute_tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "name": "Q3 execution hours",
+      "actual": 57.47409999999999,
+      "reference": 57.4741,
+      "absolute_tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "Q3 execution maximum C",
+      "actual": 0.1499998922080308,
+      "reference": 0.149999892208,
+      "absolute_tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "Q4 critical seconds",
+      "actual": 183931.21171546692,
+      "reference": 183931.211715489,
+      "absolute_tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "name": "Q4 execution hours",
+      "actual": 51.0921,
+      "reference": 51.0921,
+      "absolute_tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "Q4 same-property fixed-radius critical hours",
+      "actual": 129.84836083944992,
+      "reference": 129.8484,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "Q4 time reduction percent",
+      "actual": 60.652562016190025,
+      "reference": 60.6526,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "q1 whole 2D mean",
+      "actual": 2.2749293945176734,
+      "reference": 2.274929,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q1 whole 1D mean",
+      "actual": 2.2935317716076713,
+      "reference": 2.293532,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q1 loss increase percent",
+      "actual": 7.253287164108757,
+      "reference": 7.2533,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "q2 whole 2D mean",
+      "actual": 1.3274816028351883,
+      "reference": 1.327482,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q2 whole 1D mean",
+      "actual": 1.3824922999742357,
+      "reference": 1.382492,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q2 loss increase percent",
+      "actual": 4.711805938224933,
+      "reference": 4.7118,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "q4 whole 2D mean",
+      "actual": 1.024545239072693,
+      "reference": 1.024545,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 whole 1D mean",
+      "actual": 1.0651979642017884,
+      "reference": 1.065198,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 loss increase percent",
+      "actual": 2.737922238047097,
+      "reference": 2.7379,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "q3 baseline root hours",
+      "actual": 57.473996390620044,
+      "reference": 57.473996,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 baseline change hours",
+      "actual": 0.0,
+      "reference": 0,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 temperature_minus_1K root hours",
+      "actual": 59.341275104172716,
+      "reference": 59.341275,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 temperature_minus_1K change hours",
+      "actual": 1.8672787135526676,
+      "reference": 1.867279,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 temperature_plus_1K root hours",
+      "actual": 55.68835717569989,
+      "reference": 55.688357,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 temperature_plus_1K change hours",
+      "actual": -1.7856392149201565,
+      "reference": -1.785639,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 boundary_minus_0p005 root hours",
+      "actual": 57.38274772078775,
+      "reference": 57.382748,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 boundary_minus_0p005 change hours",
+      "actual": -0.09124866983229973,
+      "reference": -0.091249,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 boundary_plus_0p005 root hours",
+      "actual": 57.584112919455926,
+      "reference": 57.584113,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q3 boundary_plus_0p005 change hours",
+      "actual": 0.11011652883587683,
+      "reference": 0.110117,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 baseline root hours",
+      "actual": 51.092003205464806,
+      "reference": 51.092003,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 baseline change hours",
+      "actual": 0.0,
+      "reference": 0,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 temperature_minus_1K root hours",
+      "actual": 52.729346059547005,
+      "reference": 52.729346,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 temperature_minus_1K change hours",
+      "actual": 1.6373428540822028,
+      "reference": 1.637343,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 temperature_plus_1K root hours",
+      "actual": 49.52534296679283,
+      "reference": 49.525343,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 temperature_plus_1K change hours",
+      "actual": -1.566660238671975,
+      "reference": -1.56666,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 boundary_minus_0p005 root hours",
+      "actual": 50.993817959071606,
+      "reference": 50.993818,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 boundary_minus_0p005 change hours",
+      "actual": -0.09818524639320256,
+      "reference": -0.098185,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 boundary_plus_0p005 root hours",
+      "actual": 51.218753017500404,
+      "reference": 51.218753,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "q4 boundary_plus_0p005 change hours",
+      "actual": 0.12674981203559987,
+      "reference": 0.12675,
+      "absolute_tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "Q2 hm_0.8 center at 3h",
+      "actual": 1.8581467910640415,
+      "reference": 1.8581,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "Q2 hm_0.8 surface at 3h",
+      "actual": 1.177492953390834,
+      "reference": 1.1775,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "Q2 hm_1.2 center at 3h",
+      "actual": 1.6920556424798685,
+      "reference": 1.6921,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "Q2 hm_1.2 surface at 3h",
+      "actual": 0.8736683758131526,
+      "reference": 0.8737,
+      "absolute_tolerance": 5e-05,
+      "pass": true
+    },
+    {
+      "name": "q23 coarse 2D Cmax at the stated time",
+      "actual": 0.149998606289714,
+      "reference": 0.14999860628975217,
+      "absolute_tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "name": "q4 coarse 2D Cmax at the stated time",
+      "actual": 0.15000140662294284,
+      "reference": 0.15000140662294265,
+      "absolute_tolerance": 1e-08,
+      "pass": true
+    }
+  ],
+  "full_outputs": {
+    "q2_temperature_TC": {
+      "cells": 4345047,
+      "max_abs_unrounded_to_submitted_rounded": 4.999984032849625e-05,
+      "four_decimal_different_cells": 0,
+      "first_differences": [],
+      "pass": true,
+      "tolerance_reason": "Submitted values are rounded to 4 decimals; half a display unit plus 2e-8 numerical tolerance"
+    },
+    "q2_moisture_C": {
+      "cells": 4345047,
+      "max_abs_unrounded_to_submitted_rounded": 4.999998121274496e-05,
+      "four_decimal_different_cells": 0,
+      "first_differences": [],
+      "pass": true,
+      "tolerance_reason": "Submitted values are rounded to 4 decimals; half a display unit plus 2e-8 numerical tolerance"
+    },
+    "q1_workbook": {
+      "cells": 75600,
+      "four_decimal_different_cells": 0,
+      "max_abs_difference": 4.999798832017177e-05,
+      "pass": true
+    },
+    "q3_workbook": {
+      "cells": 72429,
+      "four_decimal_different_cells": 0,
+      "max_abs_difference": 1.6113776979409522e-12,
+      "pass": true
+    },
+    "q4_workbook": {
+      "cells": 67452,
+      "four_decimal_different_cells": 0,
+      "max_abs_difference": 4.9999781646950514e-05,
+      "pass": true
+    }
+  },
+  "geometry_table": [
+    {
+      "case": "q1",
+      "time_s": 1800,
+      "means_2d_1d": [
+        2.2749293945176734,
+        2.2935317716076713
+      ],
+      "loss_increase_percent": 7.253287164108757
+    },
+    {
+      "case": "q2",
+      "time_s": 10800,
+      "means_2d_1d": [
+        1.3274816028351883,
+        1.3824922999742357
+      ],
+      "loss_increase_percent": 4.711805938224933
+    },
+    {
+      "case": "q4",
+      "time_s": 21600,
+      "means_2d_1d": [
+        1.024545239072693,
+        1.0651979642017884
+      ],
+      "loss_increase_percent": 2.737922238047097
+    }
+  ],
+  "environment_table": [
+    {
+      "case": "q3",
+      "scenario": "baseline",
+      "root_h": 57.473996390620044,
+      "delta_h": 0.0
+    },
+    {
+      "case": "q3",
+      "scenario": "temperature_minus_1K",
+      "root_h": 59.341275104172716,
+      "delta_h": 1.8672787135526676
+    },
+    {
+      "case": "q3",
+      "scenario": "temperature_plus_1K",
+      "root_h": 55.68835717569989,
+      "delta_h": -1.7856392149201565
+    },
+    {
+      "case": "q3",
+      "scenario": "boundary_minus_0p005",
+      "root_h": 57.38274772078775,
+      "delta_h": -0.09124866983229973
+    },
+    {
+      "case": "q3",
+      "scenario": "boundary_plus_0p005",
+      "root_h": 57.584112919455926,
+      "delta_h": 0.11011652883587683
+    },
+    {
+      "case": "q4",
+      "scenario": "baseline",
+      "root_h": 51.092003205464806,
+      "delta_h": 0.0
+    },
+    {
+      "case": "q4",
+      "scenario": "temperature_minus_1K",
+      "root_h": 52.729346059547005,
+      "delta_h": 1.6373428540822028
+    },
+    {
+      "case": "q4",
+      "scenario": "temperature_plus_1K",
+      "root_h": 49.52534296679283,
+      "delta_h": -1.566660238671975
+    },
+    {
+      "case": "q4",
+      "scenario": "boundary_minus_0p005",
+      "root_h": 50.993817959071606,
+      "delta_h": -0.09818524639320256
+    },
+    {
+      "case": "q4",
+      "scenario": "boundary_plus_0p005",
+      "root_h": 51.218753017500404,
+      "delta_h": 0.12674981203559987
+    }
+  ],
+  "geometry_endpoint_reproduction": {
+    "q23": {
+      "initial_saved_time_s": 206900.97520463658,
+      "execution_s": 206906.76,
+      "rtol": 2e-11,
+      "atol_T": 1e-10,
+      "atol_C": 1e-13,
+      "max_step_s": 0.5,
+      "nfev": 38,
+      "nlu": 8,
+      "elapsed_s": 5.855881700000282,
+      "direct_FV_Cmax_at_execution": 0.149998606289714,
+      "threshold_margin_0p15_minus_Cmax": 1.393710285985117e-06,
+      "wettest_r_z_m": [
+        0.0,
+        0.0
+      ],
+      "all_nodes_strictly_pass": true,
+      "radial_max_positive_difference": -1.007976326718174e-06,
+      "axial_max_positive_difference": -6.903021279591748e-10,
+      "upstream_error": "Unchanged saved coarse-grid history; local tight solve does not eliminate upstream spatial/temporal errors.",
+      "continuation_crosscheck_with_frozen_events": [
+        {
+          "time_s": 206900.97520463658,
+          "Cmax_new": 0.15000029128684356,
+          "Cmax_saved": 0.15000029128684356,
+          "max_abs_C_difference": 0.0,
+          "max_abs_T_difference": 0.0
+        },
+        {
+          "time_s": 206901.97520463658,
+          "Cmax_new": 0.15000000000035718,
+          "Cmax_saved": 0.15,
+          "max_abs_C_difference": 3.572142581731441e-13,
+          "max_abs_T_difference": 2.842170943040401e-14
+        },
+        {
+          "time_s": 206902.97520463658,
+          "Cmax_new": 0.14999970871629234,
+          "Cmax_saved": 0.1499997087161983,
+          "max_abs_C_difference": 9.406364576136639e-14,
+          "max_abs_T_difference": 2.1316282072803006e-14
+        }
+      ]
+    },
+    "q4": {
+      "initial_saved_time_s": 172800.0,
+      "execution_s": 183931.56,
+      "rtol": 2e-11,
+      "atol_T": 1e-10,
+      "atol_C": 1e-13,
+      "max_step_s": 30.0,
+      "nfev": 772,
+      "nlu": 83,
+      "elapsed_s": 59.74383299999954,
+      "direct_FV_Cmax_at_execution": 0.15000140662294284,
+      "threshold_margin_0p15_minus_Cmax": -1.406622942845548e-06,
+      "wettest_r_z_m": [
+        0.0,
+        0.0
+      ],
+      "all_nodes_strictly_pass": false,
+      "radial_max_positive_difference": -7.556601116578965e-07,
+      "axial_max_positive_difference": -1.3175467661330487e-11,
+      "upstream_error": "Unchanged saved coarse-grid history; local tight solve does not eliminate upstream spatial/temporal errors.",
+      "continuation_crosscheck_with_frozen_events": [
+        {
+          "time_s": 183933.28716645692,
+          "Cmax_new": 0.15000051974220574,
+          "Cmax_saved": 0.15000051348179994,
+          "max_abs_C_difference": 6.260405804869862e-09,
+          "max_abs_T_difference": 0.0
+        },
+        {
+          "time_s": 183934.28716645692,
+          "Cmax_new": 0.15000000626218918,
+          "Cmax_saved": 0.15,
+          "max_abs_C_difference": 6.262189183869893e-09,
+          "max_abs_T_difference": 0.0
+        },
+        {
+          "time_s": 183935.28716645692,
+          "Cmax_new": 0.1499994927886588,
+          "Cmax_saved": 0.14999948652717665,
+          "max_abs_C_difference": 6.26148213833666e-09,
+          "max_abs_T_difference": 0.0
+        }
+      ]
+    }
+  },
+  "exported_workbook_cells_read_back": 9365307,
+  "completed_tasks": {
+    "environment-q3-40-all": {
+      "returncode": 0,
+      "elapsed_s": 14.141657590866089
+    },
+    "environment-q3-80-baseline": {
+      "returncode": 0,
+      "elapsed_s": 5.282485008239746
+    },
+    "environment-q3-80-temperature_minus_1K": {
+      "returncode": 0,
+      "elapsed_s": 5.354401588439941
+    },
+    "environment-q4-40-all": {
+      "returncode": 0,
+      "elapsed_s": 14.498207092285156
+    },
+    "environment-q4-60-baseline": {
+      "returncode": 0,
+      "elapsed_s": 4.3771445751190186
+    },
+    "environment-q4-60-temperature_minus_1K": {
+      "returncode": 0,
+      "elapsed_s": 4.7479307651519775
+    },
+    "geometry-algebra-checks": {
+      "returncode": 0,
+      "elapsed_s": 1.368650197982788
+    },
+    "geometry-endpoint-continuations": {
+      "returncode": 0,
+      "elapsed_s": 67.04838848114014
+    },
+    "geometry-q1-1d": {
+      "returncode": 0,
+      "elapsed_s": 1.4600818157196045
+    },
+    "geometry-q1-2d": {
+      "returncode": 0,
+      "elapsed_s": 151.70344257354736
+    },
+    "geometry-q23-1d": {
+      "returncode": 0,
+      "elapsed_s": 20.960416793823242
+    },
+    "geometry-q23-2d": {
+      "returncode": 0,
+      "elapsed_s": 4110.203067302704
+    },
+    "geometry-q4-1d": {
+      "returncode": 0,
+      "elapsed_s": 25.49808096885681
+    },
+    "geometry-q4-2d": {
+      "returncode": 0,
+      "elapsed_s": 1100.7112238407135
+    },
+    "material-motion-72h": {
+      "returncode": 0,
+      "elapsed_s": 1.3854985237121582
+    },
+    "physics-diagnostics": {
+      "returncode": 0,
+      "elapsed_s": 1.031625747680664
+    },
+    "q1-main": {
+      "returncode": 0,
+      "elapsed_s": 26.471495389938354
+    },
+    "q2-sensitivity": {
+      "returncode": 0,
+      "elapsed_s": 49.02018737792969
+    },
+    "q23-main": {
+      "returncode": 0,
+      "elapsed_s": 439.6637647151947
+    },
+    "q3-main": {
+      "returncode": 0,
+      "elapsed_s": 98.35064148902893
+    },
+    "q3-time-mean": {
+      "returncode": 0,
+      "elapsed_s": 79.9162425994873
+    },
+    "q4-finalize": {
+      "returncode": 0,
+      "elapsed_s": 1.570849895477295
+    },
+    "q4-fixed80": {
+      "returncode": 0,
+      "elapsed_s": 116.49245119094849
+    },
+    "q4-fv320-tight": {
+      "returncode": 0,
+      "elapsed_s": 23.648500680923462
+    },
+    "q4-fv320": {
+      "returncode": 0,
+      "elapsed_s": 17.710527896881104
+    },
+    "q4-fv640-extra-tight": {
+      "returncode": 0,
+      "elapsed_s": 39.649667263031006
+    },
+    "q4-fv640-tight": {
+      "returncode": 0,
+      "elapsed_s": 86.7018392086029
+    },
+    "q4-main": {
+      "returncode": 0,
+      "elapsed_s": 285.4949369430542
+    },
+    "q4-numeric-comparison": {
+      "returncode": 0,
+      "elapsed_s": 2.128484010696411
+    },
+    "q4-pchip80": {
+      "returncode": 0,
+      "elapsed_s": 49.413413286209106
+    },
+    "q4-spectral160": {
+      "returncode": 0,
+      "elapsed_s": 1576.3611793518066
+    },
+    "q4-spectral80": {
+      "returncode": 0,
+      "elapsed_s": 45.09432530403137
+    },
+    "q4-time120-bdf": {
+      "returncode": 0,
+      "elapsed_s": 71.99290800094604
+    }
+  },
+  "comparison_sha256": "9a609b40440a3756d666b6041f936a5df0b95d85f5b3d10ba24776816e766e6e",
+  "workbook_verification_sha256": "5e263856d4763a446498e1fd30cf5a405907ad85fd24c196e02fb484fd7d56c4",
+  "solver_input_source_sha256": "0ad080a09d124156d901bd28d49fb1f3c9b9024150a4d36e9683c2f0645bbc2d",
+  "note": "Numerical reproduction does not establish a physical calibration or a continuous two-dimensional strict guarantee."
+}

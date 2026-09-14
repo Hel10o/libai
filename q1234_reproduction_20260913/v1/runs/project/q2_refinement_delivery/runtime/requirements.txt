@@ -1,0 +1,6 @@
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+# Actual delivered Excel used artifact_tool 2.8.22, provided by this execution environment.
+# No private font or package binaries are redistributed.
+# For environments without artifact_tool, use the optional --excel-engine portable path.

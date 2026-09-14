@@ -1,0 +1,8 @@
+paper_source/build/
+paper_source/*.aux
+paper_source/*.log
+paper_source/*.out
+paper_source/*.xdv
+paper_source/*.fdb_latexmk
+paper_source/*.fls
+*.partial.xlsx

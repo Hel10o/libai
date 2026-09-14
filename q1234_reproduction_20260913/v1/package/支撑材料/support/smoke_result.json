@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "scope": "hash/AST/safe --help only; no PDE or workbook export",
+  "snapshot_files_checked": 64,
+  "python_files_parsed": 42,
+  "versions": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.0",
+    "openpyxl": "3.1.5"
+  },
+  "entry_checks": [
+    {
+      "path": "q1_complete_delivery/q1_delivery/run_all.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_validate.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_refine.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_excel.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_report.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q2_refinement_delivery/runtime/source/q2_core.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q2_refinement_delivery/runtime/source/q2_spectral.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q2_refinement_delivery/source/prepare_reused.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q2_refinement_delivery/source/q2_mechanism.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/source/solve_unified_q23.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/source/audit_unified_q23.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_refined_reference.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q3_refinement_delivery/source/future_scenarios_from_checkpoint.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q3_refinement_delivery/source/export_workbook.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q3_refinement_delivery/source/validate_xlsx.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q3_refinement_delivery/source/verify_frozen.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/run_q4.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/geometry_solver.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/geometry_solver_executed.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/geometry_checks.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/check_numerics.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/finalize_q4.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/package_workbooks.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q1234_overall_review_delivery/v1/source/environment_probe.py",
+      "check": "--help",
+      "returncode": 0
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/export_workbooks.mjs",
+      "check": "node --check",
+      "returncode": 0
+    }
+  ]
+}

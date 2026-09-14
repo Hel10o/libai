@@ -1,0 +1,182 @@
+\section{问题重述}
+\subsection{问题背景}
+干燥是影响中药材成品品质的重要工序，热风烘干通常包括预热平衡与恒温干燥两个阶段。烘房环境通过表面换热和水分交换改变药材内部状态，热量向内传递、水分向外迁移，并可能伴随尺寸收缩。由于内部传输需要时间，表面的升温或失水不能直接代表内部各处的状态。因此，需要建立温度与含水率随时间、位置变化的模型，在给出内部状态预测的同时，确定满足干燥要求所需的时间。
+
+题设药材近似为长25\unit{cm}、初始半径2\unit{cm}的圆柱，初始温度为28\celsius，干基含水率为2.55\unit{kg/kg}。已知资料包括烘房温湿环境记录、药材半径记录和各问的物性参数。
+
+\subsection{问题提出}
+根据上述条件，建立模型完成以下四项任务。论文表格与完整过程文件分别按题设要求输出，结果统一保留四位小数。
+
+\textbf{问题一：}采用附录2参数，建立1800\unit{s}预热阶段的温度与含水率模型。在论文中给出100、300、600、900、1200、1500、1800\unit{s}及到中心距离0、0.5、1、1.5、2\unit{cm}处的温湿结果；完整结果按1\unit{s}和0.1\unit{cm}采样，写入\texttt{result1.xlsx}。
+
+\textbf{问题二：}全程统一采用附录3经验公式，描述整个烘干过程的温度与含水率变化。在论文中给出前3\unit{h}每隔0.5\unit{h}、上述五个位置的温湿结果；完整过程按1\unit{s}和0.1\unit{cm}采样，写入\texttt{result2.xlsx}。
+
+\textbf{问题三：}依据药材各处含水率低于0.15\unit{kg/kg}的要求，确定以小时计的烘干时长。论文表格列出每隔6\unit{h}及结束时刻、每隔0.5\unit{cm}的含水率；完整过程按60\unit{s}和0.1\unit{cm}采样，写入\texttt{result3.xlsx}。
+
+\textbf{问题四：}结合附件2半径记录与附录4物性，确定尺寸收缩下的烘干时长。论文表格列出每隔6\unit{h}及结束时刻、实际材料范围内每隔0.5\unit{cm}和当前表面的含水率；完整过程按60\unit{s}和0.1\unit{cm}采样，写入\texttt{result4.xlsx}。
+
+\section{问题分析}
+\textbf{对于问题一，}重点是描述预热阶段内部与表面响应的空间差异。附录2的热物性为常数，水分扩散系数随含水率变化，因而可分别建立导热方程与非线性扩散方程，以初始均匀状态、轴心对称条件和表面交换条件构成定解问题。采用圆环有限体积法共享相邻单元面通量，并通过隐式积分获得规定点值与完整过程\cite{dasilva2014}。
+
+\textbf{对于问题二，}物性随局部温度或含水率改变，温度与水分场之间形成反馈，需从共同初态联立求解变物性方程。前3\unit{h}规定表应从同一全过程轨迹提取，不接续第一问末态。采用Chebyshev配点与隐式积分处理空间梯度和长时演化，同时分析升温与失水对扩散系数的共同作用；观测时段之后的环境按明确的延拓假设处理。
+
+\textbf{对于问题三，}难点在于把“各处低于阈值”转化为可计算的终止条件。沿用第二问轨迹，追踪全径向最大含水率，并检查重构曲线的内部极值，避免只凭表面值或平均值判断结束。先定位最大值等于阈值的事件根，再结合加密与独立积分检验设置数值余量，选取严格低于阈值的执行点；判定使用未舍入值，表格仅承担结果展示。
+
+\textbf{对于问题四，}半径变化使计算区域和表面位置随时间移动，固定网格上的距离不再直接对应同一材料位置。以干物质守恒为基础建立材料坐标方程，将变动区域映射到固定参考域，并按附录4物性从共同初态独立积分。恒长度、均匀径向收缩是对内部运动的附加假设\cite{adrover2020,wu2022}，其他物料的经验参数不直接迁移。输出时区分实际域内位置与当前表面，并以同物性恒半径条件对照分析收缩的作用。
+
+主模型的空间近似见假设\ref{ass:midsection}。有限圆柱全域终点还需结合相应二维证据判断，不能由一维阈值事件直接推出；统一适用边界见第\ref{sec:limitations}节。
+
+\section{模型假设}
+\label{sec:assumptions}
+\begin{enumerate}
+\item 假设药材为轴对称连续介质，初始温度、干基含水率及干密度在空间上均匀分布。\label{ass:midsection}
+主模型采用中截面径向近似，忽略端面影响。
+\item 假设烘房环境在空间上均匀，题给空气水分量可等效作为药材表面传质的有效环境边界量。
+\item 假设药材表面的传热、传质通量分别与温度差和有效含水率差成正比，各问沿用同一组恒定交换系数。
+\item 假设烘干过程中药材干物质质量守恒，题给密度仅用于有效热容量。
+模型不显式计入水分蒸发潜热、水分迁移携焓及机械功。
+\item 前三问假设药材尺寸保持不变；第四问假设药材长度不变，并随观测半径作均匀径向收缩。
+\item 假设4\unit{h}后烘房环境保持稳定，其温度和空气水分量取3--4\unit{h}观测数据的算术平均值。
+按末小时61个采样点计算，相应环境平台为
+\begin{equation}
+T_a=49.9989344262\celsius,\qquad b=0.04998754098\unit{kg/kg}.
+\label{eq:future}
+\end{equation}
+\end{enumerate}
+
+\Needspace{22\baselineskip}
+\section{符号说明}
+\begin{table}[H]
+\centering\small
+\caption{主要符号及单位}\label{tab:symbols}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+\toprule 符号&含义&单位\\\midrule
+$T$&材料摄氏温度&$^\circ\mathrm C$\\
+$T_K$&材料绝对温度，$T_K=T+273.15$&$\mathrm K$\\
+$C$&材料干基含水率，$C=m_w/m_d$&$\mathrm{kg/kg}$\\
+$b$&有效材料边界值&$\mathrm{kg/kg}$\\
+$r$&径向坐标&$\mathrm m$\\
+$z$&轴向坐标&$\mathrm m$\\
+$R$&当前外半径&$\mathrm m$\\
+$L$&药材总长度&$\mathrm m$\\
+$\rhoe$&有效热容量采用的经验密度&$\mathrm{kg/m^3}$\\
+$\rhod$&单位当前体积的干物质密度&$\mathrm{kg/m^3}$\\
+$c_p$&比热容&$\mathrm{J/(kg\cdot K)}$\\
+$k$&导热系数&$\mathrm{W/(m\cdot K)}$\\
+$D$&有效水分扩散系数&$\mathrm{m^2/s}$\\
+$v_s$&材料速度&$\mathrm{m/s}$\\
+$J$&材料映射的体积雅可比&$1$\\
+$\xi$&参考坐标，$\xi=r/R$&$1$\\
+$x$&配点坐标，$x=\xi^2$&$1$\\
+$t_*$&最大含水率等于阈值的临界时刻&$\mathrm s$\\
+$t_{\mathrm{exec}}$&正式执行时刻&$\mathrm s$\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\Needspace{7\baselineskip}
+\section{统一传热传质模型与数值方法}
+\label{sec:common-model}
+本节给出四问共用的局部收支关系。第一问在固定圆柱内代入常热物性并作
+圆环积分，第二问将局部变物性代入并联立求解；第三问在第二问轨迹上求
+严格阈值的执行时刻，第四问再通过材料坐标处理观测收缩。相应的方程化简
+与求解步骤分别见第\ref{sec:q1}--\ref{sec:q4}节。
+依假设\ref{ass:midsection}，主模型的温度、含水率及局部物性仅随径向位置和时间变化；题表的“到药材中心距离”按轴向中截面内的径向位置解释。
+\Needspace{8\baselineskip}
+\subsection{通用方程与初边值条件}
+设$\Ds/\dd t=\partial_t+v_s\cdot\nabla$为材料导数。以
+$\boldsymbol j_T=-k(C)\nabla T$表示导热通量，并用题给有效容量
+$\rhoe c_p$描述局部温升率；将单位体积的有效热储存率等同于导热净输入
+$-\nabla\cdot\boldsymbol j_T$，得到
+\begin{equation}
+\rhoe(C)c_p(C)\frac{\Ds T}{\dd t}
+=\nabla\cdot\bigl(k(C)\nabla T\bigr).
+\label{eq:heat}
+\end{equation}
+式\eqref{eq:heat}采用上述有效容量闭合，没有蒸发潜热或组分携焓项，
+不是对真实总焓守恒的证明。对随干骨架运动的控制体$V_s(t)$，干物质不穿过
+边界；内部不考虑压力驱动流动及流体相对干骨架的对流，水分仅以相对材料的扩散通量$\boldsymbol j_w=-\rhod D\nabla C$交换。
+记外法向为$n$，则
+\begin{equation}
+\begin{aligned}
+\frac{\dd}{\dd t}\int_{V_s(t)}\rhod\,\dd V&=0,\\
+\frac{\dd}{\dd t}\int_{V_s(t)}\rhod C\,\dd V
+&=-\int_{\partial V_s(t)}\boldsymbol j_w\cdot n\,\dd A.
+\end{aligned}
+\label{eq:material-balances}
+\end{equation}
+将式\eqref{eq:material-balances}用输运定理展开，再从水分方程中减去
+$C$倍的干物质方程，得到
+\begin{equation}
+\partial_t\rhod+\nabla\cdot(\rhod v_s)=0,\qquad
+\rhod\frac{\Ds C}{\dd t}=\nabla\cdot\bigl(\rhod D(T,C)\nabla C\bigr).
+\label{eq:moisture}
+\end{equation}
+由初始干密度均匀以及固定骨架或均匀径向收缩的假设，$\rhod$保持空间均匀，可以从水分方程约去；时间变化的体积不应再向干基变量额外添加浓缩源。将内部外向通量与表面对流交换相等，水分条件按同一干质量标度约去$\rhod$，得到
+\begin{equation}
+-k\partial_nT=h_T(T_s-T_a),\qquad
+-D\partial_nC=h_m(C_s-b).
+\label{eq:boundary}
+\end{equation}
+当$C_s>b$时外向失水为正；若边界关系改变导致$C_s<b$，不能继续强制只许失水。轴线和二维中面满足零法向梯度。初态统一为
+\begin{equation}
+T(r,z,0)=28\celsius,\qquad C(r,z,0)=2.55\unit{kg/kg}.
+\label{eq:initial}
+\end{equation}
+在一维固定圆柱中，散度取$r^{-1}\partial_r(r\,\cdot)$；轴对称二维再加$\partial_z(\cdot)$。变系数保留在散度内部，不能将$k(C)$或$D(T,C)$简单提出算子；$\rhoe c_p$乘温度变化率也不能直接改写为$\partial_t(\rhoe c_pT)$。
+
+$h_T$按单一系数处理，不另区分对流与辐射项。附件空气量记为$y_a$，有效边界值取$b=g(y_a,T_s,\ldots)$，现行计算取恒等映射$g(y_a,\ldots)=y_a$。
+观测区间内，环境与半径记录均采用分段线性插值；4\unit{h}后的环境采用式\eqref{eq:future}的平台。
+
+\Needspace{15\baselineskip}
+\subsection{分问物性与参数设置}
+表面换热、传质系数取附录2给定的$h_T=25\unit{W/(m^2K)}$、$h_m=8\times10^{-7}\unit{m/s}$。
+表\ref{tab:properties}保留题给公式。所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。
+\begingroup
+\setlength{\intextsep}{6pt}
+\begin{table}[H]
+\centering\small
+\caption{题给物性与本文使用方式}\label{tab:properties}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}lXXX@{}}
+\toprule&问题一&问题二、三&问题四\\\midrule
+$\rhoe\ (\mathrm{kg/m^3})$&$820$&$650+128C$&$760+90C$\\
+$c_p\ (\mathrm{J/(kg\,K)})$&$2600$&$1450+\dfrac{2736C}{1+C}$&$1850+\dfrac{2150C}{1+C}$\\[5pt]
+$k\ (\mathrm{W/(m\,K)})$&$0.36$&$0.21+\dfrac{0.38C}{1+C}$&$0.12+\dfrac{0.20C}{1+C}$\\[5pt]
+$D\ (\mathrm{m^2/s})$&$7\times10^{-9}e^{-0.89/C}$&$\begin{gathered}2.4\times10^{-3}e^{-0.45/C}\\{}\times e^{-3850/T_K}\end{gathered}$&$\begin{gathered}4.2\times10^{-4}e^{-0.30/C}\\{}\times e^{-3850/T_K}\end{gathered}$\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\endgroup
+
+\subsection{求解方法的分问衔接}
+第一问采用圆环有限体积法：从控制体收支推导相邻单元共用的面通量，
+使内部交换在总量求和时抵消，具体推导见第\ref{sec:q1}节。
+二维验证沿用这一通量收支思想，并增加轴向控制体和端面交换\cite{dasilva2014}。
+
+问题二至四的现行主轨迹采用Chebyshev配点和隐式Radau积分\cite{scipy}，
+并与有限体积、加密配点或另一时间方法交叉检验。为处理较陡水分剖面，
+对可分离的$D=A(T)f(C)$定义单调原函数
+\begin{equation}
+U(C)=\int_0^C f(s)\dd s,\qquad
+D\nabla C=A(T)\nabla U.
+\label{eq:primitive}
+\end{equation}
+式\eqref{eq:primitive}保持原扩散通量，允许先插值较平缓的$U$再反求$C$。
+第\ref{sec:q2}节据此推导配点方程与表面Robin闭合，
+第\ref{sec:q4}节进一步推导随半径改变的系数。
+
+时间推进采用自适应隐式BDF或Radau方法，在输入折点分段积分。
+各问分别报告主离散、独立对照及结果误差；导出一致性、数值精度和物理
+模型正确性是不同层级的检验，不用单一求解成功标记替代。
+
+\subsection{事件、输出与可追溯性}
+定义指定空间区域上的最湿值$\Cmax(t)=\max C(\cdot,t)$。等号事件和严格执行分别满足
+\begin{equation}
+\Cmax(t_*)=0.15,\qquad\Cmax(t_{\mathrm{exec}})<0.15.
+\label{eq:event}
+\end{equation}
+停止判断使用未舍入值；显示为0.1500的表格数不能区分阈值两侧。对配点解，除检查节点外，还利用式\eqref{eq:primitive}的单调性查找重构多项式的全部实驻点，避免只看轴心而漏掉内部极值。连续二维严格界则需进一步控制空间、时间及重构误差，不能由节点值直接推出。
+
+问题一和二按1\unit{s}输出，问题三和四按60\unit{s}输出；非整步的执行时刻单独追加。固定径向采样间隔为0.1\unit{cm}。第四问在当前实际半径内取值，域外为空白，当前表面另外列出。每个情景保存未舍入数组、求解配置和图表数据，论文中的规定四位表值由对应数组生成，避免从图像或已舍入中间表反算。

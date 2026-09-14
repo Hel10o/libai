@@ -1,0 +1,234 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LC_ALL = "C.UTF-8",
+	LC_CTYPE = "C",
+	LC_NUMERIC = "C",
+	LC_COLLATE = "C",
+	LC_TIME = (unset),
+	LC_MONETARY = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the system default locale ("Chinese (Simplified)_China.936").
+Initial Win CP for (console input, console output, system): (CP437, CP65001, CP1252)
+I changed them all to CP1252
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 15 June 2025. Version 4.87.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'xelatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "ai_details.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./ai_details.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexart.cls
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)
+(d:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+(d:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (C
+TEX)
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+(d:/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(d:/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/texlive/2026/texmf-dist/tex/latex/base/size10.clo))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+(d:/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(d:/texlive/2026/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(d:/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(d:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(d:/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)))
+(d:/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(d:/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.d
+ef (d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctex-c5size.clo)
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(d:/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(d:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/tools/array.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/needspace/needspace.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
+(d:/texlive/2026/texmf-dist/tex/latex/url/url.sty))
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+(d:/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(d:/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(d:/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+(d:/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(d:/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(d:/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def)
+(d:/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+(d:/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/hxetex.def
+(d:/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(d:/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(build/ai_details.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+[1] [2] [3] (build/ai_details.aux)
+
+Package rerunfilecheck Warning: File `ai_details.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+Output written on build/ai_details.xdv (3 pages, 57116 bytes).
+Transcript written on build/ai_details.log.
+Latexmk: Getting log file 'build/ai_details.log'
+Latexmk: Examining 'build/ai_details.fls'
+Latexmk: Examining 'build/ai_details.log'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'build/ai_details.xdv'
+Latexmk: Using bibtex to make bibliography file(s).
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/ai_details.aux
+  build/ai_details.out
+
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder -output-directory="build"  "ai_details.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./ai_details.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexart.cls
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)
+(d:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+(d:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (C
+TEX)
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+(d:/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(d:/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/texlive/2026/texmf-dist/tex/latex/base/size10.clo))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+(d:/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(d:/texlive/2026/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(d:/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(d:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(d:/texlive/2026/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)))
+(d:/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(d:/texlive/2026/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.d
+ef (d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/ctex-c5size.clo)
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def))
+(d:/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(d:/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(d:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/tools/array.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/needspace/needspace.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
+(d:/texlive/2026/texmf-dist/tex/latex/url/url.sty))
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+(d:/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(d:/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(d:/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+(d:/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(d:/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(d:/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(d:/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def)
+(d:/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+(d:/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(d:/texlive/2026/texmf-dist/tex/latex/hyperref/hxetex.def
+(d:/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(d:/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(build/ai_details.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(build/ai_details.out) (build/ai_details.out) [1] [2] [3] (build/ai_details.aux
+) )
+Output written on build/ai_details.xdv (3 pages, 58476 bytes).
+Transcript written on build/ai_details.log.
+Latexmk: Getting log file 'build/ai_details.log'
+Latexmk: Examining 'build/ai_details.fls'
+Latexmk: Examining 'build/ai_details.log'
+Latexmk: Log file says output to 'build/ai_details.xdv'
+Latexmk: Using bibtex to make bibliography file(s).
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  build/ai_details.xdv
+Category 'changed_source_rules':
+  xelatex
+Category 'no_dest':
+  xdvipdfmx
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "build/ai_details.pdf"  "build/ai_details.xdv"'
+------------
+build/ai_details.xdv -> build/ai_details.pdf
+[1][2][3]
+125741 bytes written
+Latexmk: All targets (build/ai_details.xdv build/ai_details.pdf) are up-to-date
+
+Reverting Windows console CPs to (in,out) = (437,65001)

@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\geometry_solver.py",
+    "--case",
+    "q4",
+    "--nr",
+    "640",
+    "--nz",
+    "0",
+    "--flux",
+    "integral",
+    "--rtol",
+    "2e-10",
+    "--max-step",
+    "120",
+    "--input-dir",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\inputs",
+    "--out-dir",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\validation\\geometry"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 86.7018392086029,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/geometry/q4_640x0_integral_rtol2e-10.json": "c44039a8044c9e6b8d0873091851997599ad7f781d67b8a4442cca2a22ae948f",
+    "project/q4_complete_delivery/v1/validation/geometry/q4_640x0_integral_rtol2e-10.npz": "636b1c553b0b0bb2cd7951021dd8361be588b6dfcc24dadd61a81a95490dca67"
+  }
+}

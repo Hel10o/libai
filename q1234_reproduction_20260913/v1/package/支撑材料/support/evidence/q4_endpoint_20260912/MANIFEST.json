@@ -1,0 +1,19 @@
+{
+  "scope": "Existing numerical evidence copied without recalculation.",
+  "files": [
+    {
+      "file": "endpoint_audit.json",
+      "source": "q1234_overall_review_delivery/v1/reviews/geometry/endpoint_audit.json",
+      "bytes": 4656,
+      "sha256": "3c398a37ebbb9dc3b4fa6c8e9f22333a0f29270879f734dd4e5fb8b05932c553",
+      "byte_identical": true
+    },
+    {
+      "file": "q4_direct_execution_field.npz",
+      "source": "q1234_overall_review_delivery/v1/reviews/geometry/q4_direct_execution_field.npz",
+      "bytes": 301440,
+      "sha256": "125e487e576708a819d5a92a7777a7cda1789bf061a3100272e5868ac38b8e04",
+      "byte_identical": true
+    }
+  ]
+}

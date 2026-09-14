@@ -1,0 +1,28 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q3_refinement_delivery\\source\\q3_refined_reference.py",
+    "--input",
+    "<OUTPUT>\\project\\q3_refinement_delivery\\inputs\\attachment1.xlsx",
+    "--out",
+    "<OUTPUT>\\project\\q3_refinement_delivery\\validation\\time_mean",
+    "--n",
+    "80",
+    "--scenario",
+    "time_mean",
+    "--rtol",
+    "2e-11",
+    "--max-step",
+    "120"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 79.9162425994873,
+  "outputs": {
+    "project/q3_refinement_delivery/validation/time_mean.json": "2a623079486f48c4770a1eb4636a3959f8e3082c45845422c51396fe04ee5028",
+    "project/q3_refinement_delivery/validation/time_mean.npz": "a28c63c8a56733adb9c0402efd0ec1ae01e34c77cf156e7f73c666fc3275c8d7"
+  }
+}

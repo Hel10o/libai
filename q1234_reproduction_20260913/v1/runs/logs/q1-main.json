@@ -1,0 +1,25 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1_complete_delivery\\q1_delivery\\source\\q1_solver.py",
+    "--input",
+    "<OUTPUT>\\project\\q1_complete_delivery\\q1_delivery\\input\\附件1.xlsx",
+    "--out",
+    "<OUTPUT>\\project\\q1_complete_delivery\\q1_delivery\\output",
+    "--n",
+    "10240",
+    "--quadrature"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 26.471495389938354,
+  "outputs": {
+    "project/q1_complete_delivery/q1_delivery/output/q1_unrounded.npz": "1fcb9fe929d373992f3bf061456948d0c90e54c89649ceaa390b07b1ab32f63c",
+    "project/q1_complete_delivery/q1_delivery/output/run.json": "fe01a8e524c5d789c32047d6c3e1cea3f874d30e4f0315dff000435bf4823281",
+    "project/q1_complete_delivery/q1_delivery/output/table_temperature.csv": "7d3a46c3fca819711367f586add533f4c0db7b21d332fbffddbe59731996f4a4",
+    "project/q1_complete_delivery/q1_delivery/output/table_moisture.csv": "6a74ce10524e1e3613580045f4864d44c66d33122f5ae955cc19396bf59c4cd4"
+  }
+}

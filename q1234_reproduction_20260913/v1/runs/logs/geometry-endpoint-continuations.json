@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\reviews\\geometry\\audit_geometry_endpoints.py"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 67.04838848114014,
+  "outputs": {
+    "project/q1234_overall_review_delivery/v1/reviews/geometry/endpoint_audit.json": "ae30e393f2aad11666a6b46fc60c4ba0a6a34f73984646d7a81a547362daba11",
+    "project/q1234_overall_review_delivery/v1/reviews/geometry/q23_direct_execution_field.npz": "be8794a7e282d447727fcabdbf0bb40d723154ecd495ab0ae6b97724e9d1f254",
+    "project/q1234_overall_review_delivery/v1/reviews/geometry/q4_direct_execution_field.npz": "c99668f6cc9c759a368cdd1c5b3401d6d85fe13fbf0c18bb0e049226cd3c091c"
+  }
+}

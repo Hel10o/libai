@@ -1,0 +1,24 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\source\\environment_probe.py",
+    "--case",
+    "q4",
+    "--n",
+    "60",
+    "--scenario",
+    "temperature_minus_1K",
+    "--out",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\evidence\\environment"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 4.7479307651519775,
+  "outputs": {
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_minus_1K_n60.json": "49cb86571cfae194dd6eae4177266eee44ed49e267b9161bfa86a0c9a734228e",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_minus_1K_n60.npz": "a0ac15a3a667971c189824d01a98760761ad18e0619bfb58b09e28d9d09ae3a3"
+  }
+}

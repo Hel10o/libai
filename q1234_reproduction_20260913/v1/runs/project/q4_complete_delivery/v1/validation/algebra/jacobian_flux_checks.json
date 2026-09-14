@@ -1,0 +1,26 @@
+{
+  "q1_integral": {
+    "jacobian_direction_max_abs": 1.984362008045082e-09,
+    "jacobian_direction_relative_norm": 1.0602795784410624e-10
+  },
+  "q23_integral": {
+    "jacobian_direction_max_abs": 1.9106316528905154e-09,
+    "jacobian_direction_relative_norm": 1.2039714742627774e-10
+  },
+  "q4_integral": {
+    "jacobian_direction_max_abs": 1.1790846632386831e-09,
+    "jacobian_direction_relative_norm": 9.792503957364505e-11
+  },
+  "q1_harmonic": {
+    "jacobian_direction_max_abs": 1.984362008045082e-09,
+    "jacobian_direction_relative_norm": 1.0604028145344445e-10
+  },
+  "q23_harmonic": {
+    "jacobian_direction_max_abs": 1.9106316528905154e-09,
+    "jacobian_direction_relative_norm": 1.204018563448006e-10
+  },
+  "q4_harmonic": {
+    "jacobian_direction_max_abs": 1.1790846632386831e-09,
+    "jacobian_direction_relative_norm": 9.792544812961897e-11
+  }
+}

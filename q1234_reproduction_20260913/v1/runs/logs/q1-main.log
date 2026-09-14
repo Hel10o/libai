@@ -1,0 +1,29 @@
+T n=10240 t=300
+T n=10240 t=600
+T n=10240 t=900
+T n=10240 t=1200
+T n=10240 t=1500
+T n=10240 t=1800
+{"field": "T", "n_intervals": 10240, "n_nodes": 10241, "dr_m": 1.953125e-06, "rtol": 2e-12, "atol": 2e-14, "max_step_s": 3.0, "method": "scipy.solve_ivp BDF, analytic sparse Jacobian", "segments": 30, "nfev": 7646, "njev": 30, "nlu": 815, "accepted_steps": 3793, "nonlinear_failure_policy": "raise; never silently accept or clip", "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size", "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe", "newton_tolerance": 0.0011102230246251565, "environment_interpolation": "linear", "elapsed_seconds": 11.266114099998958, "conservation_augmented_max_abs": 2.3092638912203256e-14, "independent_flux_quadrature_max_abs": 1.191624576790673e-10, "min_value": 28.0, "max_value": 36.78556034638117, "initial_max_error": 0.0}
+C n=10240 t=300
+C n=10240 t=600
+C n=10240 t=900
+C n=10240 t=1200
+C n=10240 t=1500
+C n=10240 t=1800
+{"field": "C", "n_intervals": 10240, "n_nodes": 10241, "dr_m": 1.953125e-06, "rtol": 2e-12, "atol": 2e-14, "max_step_s": 3.0, "method": "scipy.solve_ivp BDF, analytic sparse Jacobian", "segments": 30, "nfev": 4095, "njev": 31, "nlu": 526, "accepted_steps": 2028, "nonlinear_failure_policy": "raise; never silently accept or clip", "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size", "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe", "newton_tolerance": 0.0011102230246251565, "environment_interpolation": "linear", "elapsed_seconds": 7.2557315999947605, "conservation_augmented_max_abs": 2.4043267377038546e-15, "independent_flux_quadrature_max_abs": 9.5794483456757e-12, "min_value": 1.5102346083329063, "max_value": 2.550000000000001, "initial_max_error": 0.0}
+Tables:
+T [[28.0000533  28.0003474  28.00404566 28.03270262 28.1800714 ]
+ [28.04079133 28.06348807 28.15139598 28.36807025 28.84885399]
+ [28.45332973 28.53603066 28.80394428 29.31591627 30.1652287 ]
+ [29.32429426 29.45825062 29.87545438 30.61614243 31.73040032]
+ [30.54271897 30.70976871 31.222349   32.11255918 33.42763582]
+ [31.99572005 32.18673395 32.76602104 33.74627767 35.12026147]
+ [33.57534483 33.77200191 34.3641608  35.36212459 36.78556035]]
+C [[2.55       2.55       2.55       2.54999996 2.24704531]
+ [2.55       2.55       2.55       2.54919987 2.05083666]
+ [2.55       2.55       2.54998862 2.53527641 1.87696192]
+ [2.55       2.5499998  2.54968393 2.50454375 1.75471275]
+ [2.54999998 2.54999299 2.54818056 2.46456891 1.65855706]
+ [2.54999931 2.54993784 2.54454178 2.42061026 1.57872291]
+ [2.5499924  2.54972393 2.53830055 2.37546986 1.51023461]]

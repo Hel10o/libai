@@ -1,0 +1,24 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\source\\environment_probe.py",
+    "--case",
+    "q4",
+    "--n",
+    "60",
+    "--scenario",
+    "baseline",
+    "--out",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\evidence\\environment"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 4.3771445751190186,
+  "outputs": {
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_baseline_n60.json": "5d8c4a7307c03066b26b046fd79e41c204ef143e9e1f4ccbc77a467246a52c25",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_baseline_n60.npz": "d5397e111ad0a8852e4e234201b3c07a3f9c798705d277feec654f0e4d9f5cf1"
+  }
+}

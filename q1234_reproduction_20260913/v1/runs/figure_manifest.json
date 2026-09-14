@@ -1,0 +1,110 @@
+{
+  "numerical_figures": 7,
+  "layout": "Portable numerical review plots; not pixel-identical publication layout",
+  "files": [
+    {
+      "path": "figures/q1_profiles.png",
+      "sha256": "66fcaf1749796070aaee2ddc157eae70748964943aa3863434079bdab58e7380",
+      "sources": [
+        "q1_unrounded.npz"
+      ]
+    },
+    {
+      "path": "figures/q1_profiles.pdf",
+      "sha256": "fb82bce4c864c3a6ebf3b2293994bec2c5d19a5c667e27857717772e14c13e4c",
+      "sources": [
+        "q1_unrounded.npz"
+      ]
+    },
+    {
+      "path": "figures/q2_fields.png",
+      "sha256": "6f90ec65613c5a399bf28e044b561b4bd55b93c61c64217f3760d8dfd3a00d75",
+      "sources": [
+        "q23_unified.npz, first 3h"
+      ]
+    },
+    {
+      "path": "figures/q2_fields.pdf",
+      "sha256": "0a1220f9658b85266d605b4a915809b9fa1efb552446b4eb84d8790e7c3f4afb",
+      "sources": [
+        "q23_unified.npz, first 3h"
+      ]
+    },
+    {
+      "path": "figures/q2_mechanism.png",
+      "sha256": "112f829171084d5fa3648edaeb0dc40546f426dc1c5495b5cd5851691039f200",
+      "sources": [
+        "q23_unified.npz; analytical log decomposition"
+      ]
+    },
+    {
+      "path": "figures/q2_mechanism.pdf",
+      "sha256": "20e2f2f5b78f231162d92b8a65cc225c5e877b9a74ae0c6910ace6996863e33e",
+      "sources": [
+        "q23_unified.npz; analytical log decomposition"
+      ]
+    },
+    {
+      "path": "figures/q3_q4_drying.png",
+      "sha256": "cf4cb75919abbd2fc8949c55c790bf255f0d684fcd7085df3c898f5f11a2e57c",
+      "sources": [
+        "q23_unified.npz",
+        "main.npz"
+      ]
+    },
+    {
+      "path": "figures/q3_q4_drying.pdf",
+      "sha256": "9b3bdb209d109f24a3d1d59f1cd8d459e9d48d73982ae1560378b6959217df5c",
+      "sources": [
+        "q23_unified.npz",
+        "main.npz"
+      ]
+    },
+    {
+      "path": "figures/q4_shrinkage.png",
+      "sha256": "f8087a5a580fac9dda3e7005b6b3ed3a234d22c19dffda4d7111a7fd5d6a31b1",
+      "sources": [
+        "main.npz",
+        "fixed80.json",
+        "end_event.json"
+      ]
+    },
+    {
+      "path": "figures/q4_shrinkage.pdf",
+      "sha256": "79cc6538efca607af1dadb2400e9bfcf900a07ef3de5714480a71792af3f333f",
+      "sources": [
+        "main.npz",
+        "fixed80.json",
+        "end_event.json"
+      ]
+    },
+    {
+      "path": "figures/dimension_reduction.png",
+      "sha256": "6394783b9787d36534fed90c8d7305b03efcd8509f415ddd585d94345212c84f",
+      "sources": [
+        "six newly generated matched 1D/2D fields"
+      ]
+    },
+    {
+      "path": "figures/dimension_reduction.pdf",
+      "sha256": "eaff2d815d9e7efaf4369f85a46784456f0d146cc0aecf2615406bc832bb9c26",
+      "sources": [
+        "six newly generated matched 1D/2D fields"
+      ]
+    },
+    {
+      "path": "figures/environment_sensitivity.png",
+      "sha256": "8aa0a649fc45d2f1a12bd5ce52e5216bc9b736ca93fcd73e082fe3029ead41ab",
+      "sources": [
+        "ten newly generated n40 environmental scenarios"
+      ]
+    },
+    {
+      "path": "figures/environment_sensitivity.pdf",
+      "sha256": "5e84d8d08a989bd6ce613c2f978e11dd07645ded339c607789af224cdafb60e6",
+      "sources": [
+        "ten newly generated n40 environmental scenarios"
+      ]
+    }
+  ]
+}

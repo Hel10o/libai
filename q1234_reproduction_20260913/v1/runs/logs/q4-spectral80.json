@@ -1,0 +1,28 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\run_q4.py",
+    "--out",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\validation\\spectral80",
+    "--n",
+    "80",
+    "--kind",
+    "linear",
+    "--method",
+    "Radau",
+    "--rtol",
+    "2e-10",
+    "--max-step",
+    "180"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 45.09432530403137,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/spectral80.json": "0c032590994f4ab2786d74b279b04e6b9b09b2b97e5f0f9711003232e5338d42",
+    "project/q4_complete_delivery/v1/validation/spectral80.npz": "f1588407c9ef0e7fef8fd21ea27c79cc89e685a5be7468f6899f3a5adedcbb3a"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "paper_pages": 171,
+  "body_and_abstract_first_30_pages_pixel_identical": true,
+  "ai_pages": 3,
+  "new_reproduction_appendix_pages": [
+    156
+  ],
+  "visual_review": {
+    "rendered_all_pages": true,
+    "inspected_pages": [
+      156,
+      160,
+      168,
+      171
+    ],
+    "ai_inspected_pages": [
+      3
+    ],
+    "findings": "New source listings wrap within frames; page breaks and footers clear; AI supplement fits; no clipping or overlap observed."
+  }
+}

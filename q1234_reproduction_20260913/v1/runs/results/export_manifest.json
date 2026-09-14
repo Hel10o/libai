@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz": "1fcb9fe929d373992f3bf061456948d0c90e54c89649ceaa390b07b1ab32f63c",
+    "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz": "5525872ca7b912c293067ff6f65c082c0321cefa3292c8a8a826245d954231d3",
+    "q3_refinement_delivery/output/solution.npz": "6b33e5eba2d8f1dec662534962c63a435deb125bbba3c421f272e2c48bbce72e",
+    "q4_complete_delivery/v1/output/main.npz": "68488e8e1f470bcdcfe52ca157110bc057511af13dcc43b31c33572a87aff195"
+  },
+  "builder_sha256": "34061de58a2646ea1f6daa1055607c1ff9769aa4312d037125086632881bf6a2",
+  "outputs": {
+    "result1.xlsx": "f15d4b44f46f78fc5ba439ba1880eca765bfcd2ee29d56877c2b75f25f33067c",
+    "result2.xlsx": "5d8d9cb5c1fe6b7009d436ec14d5352d42693308290051d1b6f3b084b6caa30e",
+    "result2_全程轨迹_206907x21.npz": "6a0b22fdc18f5793de32058801a8f03740f2da88298c855a82b50fb2ffbde15f",
+    "result2_前3小时.xlsx": "26bc878467e42fa75a479bade7d5a0790272bbdb77d97bf07c3f4ecc3fe61998",
+    "result3.xlsx": "ecaeb3d5e9570be0c3757b8638dffae06a3682e87183f3d39a753642f290822f",
+    "result4.xlsx": "ff98abdb1a01e75dc4a5f01218ee8698fab455cecad9cda05772c3e49b94f51e"
+  }
+}

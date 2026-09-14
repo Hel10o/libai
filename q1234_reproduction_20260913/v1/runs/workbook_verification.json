@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "workbooks": {
+    "result1.xlsx": [
+      {
+        "sheet": "温度",
+        "rows": 1800,
+        "cells": 37800,
+        "mismatches": 0
+      },
+      {
+        "sheet": "水分浓度",
+        "rows": 1800,
+        "cells": 37800,
+        "mismatches": 0
+      }
+    ],
+    "result2.xlsx": [
+      {
+        "sheet": "温度",
+        "rows": 206907,
+        "cells": 4345047,
+        "mismatches": 0
+      },
+      {
+        "sheet": "水分浓度",
+        "rows": 206907,
+        "cells": 4345047,
+        "mismatches": 0
+      }
+    ],
+    "result2_前3小时.xlsx": [
+      {
+        "sheet": "温度",
+        "rows": 10800,
+        "cells": 226800,
+        "mismatches": 0
+      },
+      {
+        "sheet": "水分浓度",
+        "rows": 10800,
+        "cells": 226800,
+        "mismatches": 0
+      }
+    ],
+    "result3.xlsx": [
+      {
+        "sheet": "Sheet1",
+        "rows": 3449,
+        "cells": 72429,
+        "mismatches": 0
+      }
+    ],
+    "result4.xlsx": [
+      {
+        "sheet": "Sheet1",
+        "rows": 3066,
+        "cells": 73584,
+        "mismatches": 0
+      }
+    ]
+  },
+  "total_cells": 9365307,
+  "export_manifest_sha256": "884af679cc718f6afc44aad6277ff2ccb69941ad392c6a55e7e9f7b30e6b8b72"
+}

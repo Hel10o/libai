@@ -1,0 +1,19 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\package\\支撑材料\\reproduction\\material_motion.py",
+    "--root",
+    "<OUTPUT>\\project",
+    "--out",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\validation\\material_motion.json"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 1.3854985237121582,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/material_motion.json": "6ba7271d52a70584dfd4f9e771173f712e1c833bb6d96bdb17e46eaefbb58dab"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "portable_xlsx_sample_roundtrip": "pass",
+  "deliberately_changed_numeric_cell": "detected",
+  "purpose": "Verification of independent workbook reader, not a numerical-model result"
+}

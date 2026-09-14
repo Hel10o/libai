@@ -1,0 +1,56 @@
+{
+  "case": "q4",
+  "scenario": "boundary_plus_0p005",
+  "n": 40,
+  "scope": "Actual coupled 1D continuation from frozen 4 h; observed Q4 R(t) fixed across environment probes; not a physical confidence interval.",
+  "baseline_future_T_b": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "future_T_b": [
+    49.99893442622951,
+    0.05498754098360656
+  ],
+  "perturbation_T_b": [
+    0.0,
+    0.005
+  ],
+  "perturbation_status": "Analyst-selected stress size, not a measured uncertainty or a confidence interval.",
+  "start_s": 14400.0,
+  "source_state_node_count": 121,
+  "initial_state_projection": "Exact nested Chebyshev nodes; same source state for all scenarios.",
+  "source_npz": "q4_complete_delivery/v1/output/main.npz",
+  "source_npz_sha256": "68488e8e1f470bcdcfe52ca157110bc057511af13dcc43b31c33572a87aff195",
+  "operator_source": "q4_complete_delivery/v1/source/q4_spectral.py",
+  "operator_sha256": "8a7d7d0e48c0c1d4db37427f7f1de7157611d69c57afcae851e174a57f4f4503",
+  "environment_input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "script_sha256": "8e479ee8f2ff48e8ec43e6d7883af5145bf46197251240a2c6834cd339daf4bb",
+  "method": "Radau",
+  "rtol": 2e-09,
+  "atol_TC": [
+    2e-10,
+    2e-12
+  ],
+  "max_step_s": 300.0,
+  "critical_s": 184387.51086300146,
+  "critical_h": 51.218753017500404,
+  "difference_from_frozen_official_root_s": 456.2991475123272,
+  "polynomial_extrema_at_event": {
+    "max_C": 0.15,
+    "x_max": 0.0,
+    "stationary_points": 0,
+    "minimum_U": 4.512260451612193e-05
+  },
+  "official_execution_s": 183931.56,
+  "Cmax_at_official_execution": 0.15023399708996968,
+  "strict_at_official_execution_in_this_probe": false,
+  "max_boundary_residual": 7.205074007581892e-20,
+  "nfev": 9078,
+  "nlu": 2368,
+  "elapsed_s": 2.5395358000023407,
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

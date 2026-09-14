@@ -1,0 +1,5 @@
+{
+  "no_end_exchange_radially_identical_rhs_max_abs": 1.1102230246251565e-15,
+  "time_s": 9000,
+  "case": "q4 moving material reference"
+}

@@ -1,0 +1,162 @@
+{
+  "model": "global Chebyshev collocation in x=(r/R)^2 with primitive-gradient moisture flux",
+  "n": 80,
+  "method": "Radau",
+  "rtol": 2e-11,
+  "atol_C": 2e-13,
+  "max_step_s": 120.0,
+  "scenario": "mean",
+  "interpolation": "linear",
+  "future": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "event": {
+    "critical_s": 206906.38993234077,
+    "critical_h": 57.47399720342799,
+    "t_minus_s": 206906.37993234076,
+    "max_minus": 0.1500000029127689,
+    "critical_max": 0.15,
+    "t_plus_s": 206906.39993234078,
+    "max_plus": 0.1499999970872313,
+    "critical_slope_kgkg_s": -2.9127688021452233e-07,
+    "execution_s": 206906.75999999998,
+    "execution_h": 57.47409999999999,
+    "execution_max": 0.1499998922080308,
+    "execution_argmax_x": 0.0,
+    "strict_execution_pass": true,
+    "budget_s": 0.03,
+    "quantum_s": 0.36
+  },
+  "elapsed_s": 97.24231929999951,
+  "nsteps": 17483,
+  "nfev": 197684,
+  "nlu": 39566,
+  "min_scalar_boundary_derivative": 2.087403108209441e-06,
+  "max_boundary_residual": 2.97816784254612e-18,
+  "max_boundary_newton": 5,
+  "boundary_fallbacks": 0,
+  "extrema": [
+    {
+      "t_s": 1800.0,
+      "max_C": 2.549934100212318,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.8153213735807476
+    },
+    {
+      "t_s": 3600.0,
+      "max_C": 2.5257376140978933,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.6823210320140075
+    },
+    {
+      "t_s": 5400.0,
+      "max_C": 2.386064262850679,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.5925751937181247
+    },
+    {
+      "t_s": 7200.0,
+      "max_C": 2.170851543190055,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.5104323966657265
+    },
+    {
+      "t_s": 9000.0,
+      "max_C": 1.9566417571368104,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.43244858607735603
+    },
+    {
+      "t_s": 10800.0,
+      "max_C": 1.7661771010352592,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.36141801903821474
+    },
+    {
+      "t_s": 14400.0,
+      "max_C": 1.4536060033462617,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.24390154414188925
+    },
+    {
+      "t_s": 21600.0,
+      "max_C": 1.016968355442956,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.09991302816673073
+    },
+    {
+      "t_s": 43200.0,
+      "max_C": 0.4561493821147075,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.002405038440963108
+    },
+    {
+      "t_s": 64800.0,
+      "max_C": 0.29884259644304717,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 5.777240775947309e-05
+    },
+    {
+      "t_s": 86400.0,
+      "max_C": 0.237799521815737,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 8.886992546614826e-06
+    },
+    {
+      "t_s": 108000.0,
+      "max_C": 0.20582402175062092,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 3.46725593043792e-06
+    },
+    {
+      "t_s": 129600.0,
+      "max_C": 0.18587794516949355,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 2.0532869582532906e-06
+    },
+    {
+      "t_s": 151200.0,
+      "max_C": 0.17206627910035052,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.4924917189074183e-06
+    },
+    {
+      "t_s": 172800.0,
+      "max_C": 0.1618276869047996,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.2115751039758205e-06
+    },
+    {
+      "t_s": 194400.0,
+      "max_C": 0.15386733306995265,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.048984241351419e-06
+    },
+    {
+      "t_s": 206906.75999999998,
+      "max_C": 0.1499998922080308,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.838795439101166e-07
+    }
+  ],
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "source_sha256": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda"
+}

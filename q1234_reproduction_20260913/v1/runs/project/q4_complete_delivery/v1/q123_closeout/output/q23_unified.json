@@ -1,0 +1,52 @@
+{
+  "n": 80,
+  "method": "Radau",
+  "rtol": 2e-13,
+  "atol_T": 2e-12,
+  "atol_C": 2e-14,
+  "max_step_s": 30.0,
+  "end_s": 206906.76,
+  "step_s": 1.0,
+  "source_sha": "anonymous-source",
+  "model": "Appendix 3 effective radial, no explicit latent heat; same equation and boundary as Q2/Q3",
+  "environment": "piecewise linear through 4 h; then arithmetic mean of 61 samples from 3 to 4 h",
+  "future": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "nsteps": 72301,
+  "nfev": 900343,
+  "nlu": 180174,
+  "events": [
+    {
+      "root_s": 206906.38993233067,
+      "max_C": 0.15,
+      "extrema": {
+        "max_C": 0.15,
+        "x_max": 0.0,
+        "stationary_points": 0,
+        "minimum_U": 9.838812469548314e-07
+      }
+    }
+  ],
+  "runtime_versions": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "elapsed_s": 435.50595220000105,
+  "vectorized_vs_scalar_max_abs_TC": [
+    7.815970093361102e-14,
+    2.6645352591003757e-15
+  ],
+  "end_max_C": 0.14999989220802787,
+  "end_global_extrema": {
+    "max_C": 0.14999989220802787,
+    "x_max": 0.0,
+    "stationary_points": 0,
+    "minimum_U": 9.83879543910225e-07
+  },
+  "strict_1d_pass": true,
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "source_sha256": "dfe7d04931f820c1d0375211f3d63a7e2738a66fc0751507c34858e7f66146d8"
+}

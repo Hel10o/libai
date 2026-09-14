@@ -1,0 +1,115 @@
+{
+  "git_commit_read": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "scope": "Targeted continuations from previously saved 2D states. Shared frozen FV operator. No full PDE cold start or continuum error bound.",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "source_sha256": "7f4fc1ecad068ff3f5af12f48374ec742b12bb5f85aa430d3c16c2cb8e24d80d",
+  "cases": {
+    "q23": {
+      "initial_saved_time_s": 206900.97520476772,
+      "execution_s": 206906.76,
+      "rtol": 2e-11,
+      "atol_T": 1e-10,
+      "atol_C": 1e-13,
+      "max_step_s": 0.5,
+      "nfev": 38,
+      "nlu": 8,
+      "elapsed_s": 3.9696860999993078,
+      "direct_FV_Cmax_at_execution": 0.14999860628975217,
+      "threshold_margin_0p15_minus_Cmax": 1.3937102478212005e-06,
+      "wettest_r_z_m": [
+        0.0,
+        0.0
+      ],
+      "all_nodes_strictly_pass": true,
+      "radial_max_positive_difference": -1.007976326718174e-06,
+      "axial_max_positive_difference": -6.901780050250217e-10,
+      "upstream_error": "Unchanged saved coarse-grid history; local tight solve does not eliminate upstream spatial/temporal errors.",
+      "continuation_crosscheck_with_frozen_events": [
+        {
+          "time_s": 206900.97520476772,
+          "Cmax_new": 0.15000029128684353,
+          "Cmax_saved": 0.15000029128684353,
+          "max_abs_C_difference": 0.0,
+          "max_abs_T_difference": 0.0
+        },
+        {
+          "time_s": 206901.97520476772,
+          "Cmax_new": 0.15000000000035715,
+          "Cmax_saved": 0.15,
+          "max_abs_C_difference": 3.572142581731441e-13,
+          "max_abs_T_difference": 2.1316282072803006e-14
+        },
+        {
+          "time_s": 206902.97520476772,
+          "Cmax_new": 0.1499997087162923,
+          "Cmax_saved": 0.1499997087161983,
+          "max_abs_C_difference": 9.406364576136639e-14,
+          "max_abs_T_difference": 1.4210854715202004e-14
+        }
+      ]
+    },
+    "q4": {
+      "initial_saved_time_s": 172800.0,
+      "execution_s": 183931.56,
+      "rtol": 2e-11,
+      "atol_T": 1e-10,
+      "atol_C": 1e-13,
+      "max_step_s": 30.0,
+      "nfev": 772,
+      "nlu": 83,
+      "elapsed_s": 24.342575799999395,
+      "direct_FV_Cmax_at_execution": 0.15000140662294265,
+      "threshold_margin_0p15_minus_Cmax": -1.4066229426512589e-06,
+      "wettest_r_z_m": [
+        0.0,
+        0.0
+      ],
+      "all_nodes_strictly_pass": false,
+      "radial_max_positive_difference": -7.556601116578965e-07,
+      "axial_max_positive_difference": -1.3175488478012198e-11,
+      "upstream_error": "Unchanged saved coarse-grid history; local tight solve does not eliminate upstream spatial/temporal errors.",
+      "continuation_crosscheck_with_frozen_events": [
+        {
+          "time_s": 183933.2871664566,
+          "Cmax_new": 0.1500005197422057,
+          "Cmax_saved": 0.15000051348179994,
+          "max_abs_C_difference": 6.260405777114286e-09,
+          "max_abs_T_difference": 0.0
+        },
+        {
+          "time_s": 183934.2871664566,
+          "Cmax_new": 0.15000000626218915,
+          "Cmax_saved": 0.15,
+          "max_abs_C_difference": 6.262189156114317e-09,
+          "max_abs_T_difference": 0.0
+        },
+        {
+          "time_s": 183935.2871664566,
+          "Cmax_new": 0.14999949278865876,
+          "Cmax_saved": 0.14999948652717665,
+          "max_abs_C_difference": 6.261482110581085e-09,
+          "max_abs_T_difference": 0.0
+        }
+      ]
+    }
+  },
+  "sources": {
+    "q4_complete_delivery\\v1\\validation\\geometry\\q23_80x256_integral.npz": "acfc056a0bc68ff617f19ce01712e5ffa83437e9dcfacb4f09da957070ae598a",
+    "q4_complete_delivery\\v1\\validation\\geometry\\q23_80x256_integral.json": "487b8bb2d55a5818de030a91e6a3fc7c96ad950c74407390afec0d7c007489ed",
+    "q4_complete_delivery\\v1\\validation\\geometry\\q4_80x128_integral.npz": "3aad109b0d5af3fa33b1d95e334a7a02be8afb21353d16f9286f9a63aa1d2c8e",
+    "q4_complete_delivery\\v1\\validation\\geometry\\q4_80x128_integral.json": "67066e537c755374a4d405dffe89740e535ceee2d2b01e1d51840ba87565913b"
+  },
+  "comparison_principle_diagnostic": {
+    "state": "saved Q23 80x256 field at 10800 s",
+    "block": "d(Cdot)/d(T)",
+    "minimum": -0.0033382406433601895,
+    "maximum": 0.013352962573440758,
+    "negative_entries": 61776,
+    "positive_entries": 41633,
+    "meaning": "The coupled semidiscrete operator is not cooperative in componentwise (T,C) order. A scalar D>0 comparison argument alone does not establish 1D >= 2D moisture for the coupled model."
+  }
+}

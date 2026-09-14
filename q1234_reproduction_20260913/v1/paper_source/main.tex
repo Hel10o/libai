@@ -1,0 +1,121 @@
+% !TEX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=windows]{ctexart}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,longtable,graphicx}
+\usepackage{enumitem,caption,float,placeins,xcolor,fancyhdr,fvextra,needspace}
+\usepackage{xurl}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{microtype}
+\setmonofont{Consolas}
+\xeCJKDeclareCharClass{CJK}{"2103}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.12em}
+\setlength{\emergencystretch}{3em}
+\linespread{1.12}
+\setlist{nosep,leftmargin=2em}
+\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=5pt}
+\ctexset{section={format=\centering\Large\bfseries,beforeskip=1.1ex plus .4ex,afterskip=.65ex},subsection={format=\large\bfseries,beforeskip=.85ex plus .3ex,afterskip=.5ex},subsubsection={format=\normalsize\bfseries}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\setlength{\footskip}{18pt}
+\renewcommand{\arraystretch}{1.18}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{5}
+\setlength{\textfloatsep}{11pt plus 2pt minus 2pt}
+\setlength{\floatsep}{9pt plus 2pt minus 2pt}
+\newcommand{\unit}[1]{\ensuremath{\,\mathrm{#1}}}
+\newcommand{\celsius}{\ensuremath{\,{}^\circ\mathrm{C}}}
+\newcommand{\Cmax}{C_{\max}}
+\newcommand{\rhoe}{\rho_{\mathrm{eff}}}
+\newcommand{\rhod}{\rho_{\mathrm d}}
+\newcommand{\Ds}{\mathrm D_{\mathrm s}}
+\newcommand{\dd}{\mathop{}\!\mathrm d}
+\newcommand{\sourcecode}[2]{\Needspace{6\baselineskip}\subsection{#1}\noindent{\footnotesize\nolinkurl{#2}}\par\smallskip\VerbatimInput[fontsize=\fontsize{8}{9.5}\selectfont,breaklines=true,breakanywhere=true,numbers=left,numbersep=4pt,xleftmargin=1.6em,frame=single,framesep=3pt]{#2}\par}
+\newcommand{\codegroup}[1]{\Needspace{10\baselineskip}\subsection{#1}}
+\hypersetup{pdftitle={考虑变物性与径向收缩的圆柱药材干燥模型},pdfauthor={},pdfsubject={四问论文初稿},pdfkeywords={药材干燥,变物性,热质耦合,有限体积,严格阈值}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 考虑变物性与径向收缩的圆柱药材干燥模型\par}
+\vspace{0.7em}
+{\large\bfseries 摘\quad 要}
+\end{center}
+\begingroup
+\linespread{1}\fontsize{11.5}{18}\selectfont
+\setlength{\parindent}{2em}
+\setlength{\parskip}{5pt}
+\noindent\hspace*{2em}针对圆柱药材热风干燥过程中的内部温湿分布预测与干燥时间判定问题，本文依据题给环境记录、材料物性及观测半径，构建由常热物性到变物性、由固定几何到径向收缩的递进式传热传质模型。在有效湿度边界、不显式计入潜热及所设后段环境条件下，预测规定时刻与位置的温度和干基含水率，并确定达到规定含水率阈值所需的模型干燥时长。
+
+\textbf{针对问题一}，将药材近似为轴对称圆柱体，采用常热物性并考虑水分扩散系数随含水率变化，建立一维径向温湿传递模型。利用\textbf{圆环有限体积法}共享相邻单元面通量，并采用\textbf{隐式BDF方法}积分，求得预热阶段的径向温湿分布。计算得到1800\unit{s}时轴心与表面温度分别为\textbf{33.5753\celsius}和\textbf{36.7856\celsius}，表面含水率降至\textbf{1.5102\unit{kg/kg}}，轴心仍接近初始值\textbf{2.55\unit{kg/kg}}。\textbf{结果表明，热量已传入内部而失水仍集中于外层，传热与水分扩散具有不同的时间尺度。}
+
+\textbf{针对问题二}，进一步考虑热容量、导热率和扩散率随局部状态变化的反馈，从共同初态建立\textbf{变物性热质耦合模型}。采用Chebyshev配点与Radau隐式积分联立求解全过程温湿场，并通过\textbf{扩散系数的对数分解}区分升温促进与失水抑制作用。计算得到3\unit{h}时轴心与表面温差仅0.1169\unit{K}，含水率差仍为\textbf{0.7581\unit{kg/kg}}；2.5--3\unit{h}内两处扩散率均已回落。\textbf{结果表明，温度场趋于均匀时，含水率仍存在明显的径向梯度。}
+
+\textbf{针对问题三}，在第二问一维径向有效模型的基础上，以全径向最大含水率严格低于0.15\unit{kg/kg}为停止条件，建立干燥终点判定模型。采用\textbf{重构极值搜索}追踪径向含水率的最大值，计算发现临近干燥终点时轴心含水率仍为径向最大值，因此以轴心达标确定干燥终点。结合网格加密和独立时间积分检验设置数值裕量，在4\unit{h}后环境保持末小时均值的假设下，得到\textbf{达到规定含水率要求所需的模型干燥时长为57.4741\unit{h}。}
+
+\textbf{针对问题四}，根据附件2的观测半径，在恒长度、均匀径向收缩假设下，由\textbf{干物质守恒}构建\textbf{材料坐标模型}，将移动边界转化为固定参考域，避免重复加入干基含水率的体积浓缩项。采用该问物性从初态求解，在同一后段环境假设下得到一维径向模型的执行时长\textbf{51.0921\unit{h}}。进一步设置\textbf{同物性恒半径对照}，其临界时间为129.8484\unit{h}；\textbf{施加观测收缩后，模型临界时间缩短约60.65\%。}
+
+\vspace{0.7em}
+\noindent\textbf{关键词：}药材干燥；变物性；热质耦合；径向收缩；阈值事件
+\par\endgroup
+\clearpage
+\label{body:start}
+\begingroup
+\linespread{1.30}\selectfont
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\setlength{\abovedisplayskip}{12pt plus 2pt minus 2pt}
+\setlength{\belowdisplayskip}{12pt plus 2pt minus 2pt}
+\setlength{\abovedisplayshortskip}{8pt plus 2pt minus 1pt}
+\setlength{\belowdisplayshortskip}{10pt plus 2pt minus 2pt}
+\ctexset{section={beforeskip=13pt plus 2pt minus 2pt,afterskip=7pt plus 1pt minus 1pt},subsection={beforeskip=10pt plus 2pt minus 1pt,afterskip=5pt plus 1pt minus 1pt},subsubsection={beforeskip=8pt,afterskip=4pt}}
+\ctexset{section={number=\chinese{section},aftername=、,runin=false}}
+\setlist{topsep=6pt,itemsep=3pt,parsep=0pt,partopsep=0pt,leftmargin=2em}
+\renewcommand{\arraystretch}{1.30}
+\captionsetup{skip=8pt}
+\setlength{\textfloatsep}{16pt plus 2pt minus 2pt}
+\setlength{\intextsep}{16pt plus 2pt minus 2pt}
+\setlength{\floatsep}{14pt plus 2pt minus 2pt}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theHtable}{pre.\arabic{table}}
+\input{sections/problem_model}
+\FloatBarrier
+\setcounter{table}{0}
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\theHtable}{body.\arabic{table}}
+\input{sections/q1}
+\FloatBarrier
+\input{sections/q2}
+\FloatBarrier
+\input{sections/q3}
+\FloatBarrier
+\input{sections/q4}
+\FloatBarrier
+\input{sections/validation_limits}
+\FloatBarrier
+\Needspace{9\baselineskip}
+\section*{AI工具使用声明}
+\label{ai:declaration}
+本参赛队在竞赛过程中使用了AI工具，主要用于求解代码编写、文献检索和语言润色，详细使用情况见支撑材料。
+
+核心模型建立与论文初稿由参赛队完成。AI给出的求解代码和文献检索结果均经队员检查、修改和核验后采用；语言润色不改变模型、公式与数值结论。
+\input{sections/references}
+\FloatBarrier
+\par\clearpage\endgroup
+\ifdefined\BodyOnly
+\else
+\clearpage
+\appendix
+\label{appendix:start}
+\input{sections/appendix}
+\fi
+\label{document:end}
+\end{document}

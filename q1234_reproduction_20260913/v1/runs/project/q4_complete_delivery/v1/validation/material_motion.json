@@ -1,0 +1,8 @@
+{
+  "scope": "zero heat/moisture exchange, uniform initial state, prescribed observed radius",
+  "end_h": 72,
+  "temperature_moisture_max_change": 0.0,
+  "relative_dry_mass_change": 0.0,
+  "relative_water_mass_change": 0.0,
+  "pass": true
+}

@@ -1,0 +1,56 @@
+{
+  "case": "q3",
+  "scenario": "temperature_plus_1K",
+  "n": 40,
+  "scope": "Actual coupled 1D continuation from frozen 4 h; observed Q4 R(t) fixed across environment probes; not a physical confidence interval.",
+  "baseline_future_T_b": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "future_T_b": [
+    50.99893442622951,
+    0.04998754098360656
+  ],
+  "perturbation_T_b": [
+    1.0,
+    0.0
+  ],
+  "perturbation_status": "Analyst-selected stress size, not a measured uncertainty or a confidence interval.",
+  "start_s": 14400.0,
+  "source_state_node_count": 81,
+  "initial_state_projection": "Exact nested Chebyshev nodes; same source state for all scenarios.",
+  "source_npz": "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+  "source_npz_sha256": "5525872ca7b912c293067ff6f65c082c0321cefa3292c8a8a826245d954231d3",
+  "operator_source": "q4_complete_delivery/v1/q123_closeout/source/legacy_q3/q3_reference.py",
+  "operator_sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+  "environment_input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "script_sha256": "8e479ee8f2ff48e8ec43e6d7883af5145bf46197251240a2c6834cd339daf4bb",
+  "method": "Radau",
+  "rtol": 2e-09,
+  "atol_TC": [
+    2e-10,
+    2e-12
+  ],
+  "max_step_s": 300.0,
+  "critical_s": 200478.0858325196,
+  "critical_h": 55.68835717569989,
+  "difference_from_frozen_official_root_s": -6428.304099808418,
+  "polynomial_extrema_at_event": {
+    "max_C": 0.15,
+    "x_max": 0.0,
+    "stationary_points": 0,
+    "minimum_U": 1.003376064343908e-06
+  },
+  "official_execution_s": 206906.76,
+  "Cmax_at_official_execution": 0.14811524176896507,
+  "strict_at_official_execution_in_this_probe": true,
+  "max_boundary_residual": 2.625802136488331e-19,
+  "nfev": 8662,
+  "nlu": 2192,
+  "elapsed_s": 2.4615758000072674,
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

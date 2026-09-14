@@ -1,0 +1,20 @@
+PDF validation: automated_checks_passed
+Scope: full_document
+Paper: D:\Desktop\CUMCM26\q1234_reproduction_20260913\v1\paper_source\build\main.pdf
+AI details: D:\Desktop\CUMCM26\q1234_reproduction_20260913\v1\paper_source\build\ai_details.pdf
+Checks: {'pass': 37, 'info': 2}
+Counted body pages: 29
+Full document validated: True
+Submission-ready certification: not provided (visual and human factual review remain external).
+TABLE q1_temperature: pass; matched cells=42
+TABLE q1_moisture: pass; matched cells=42
+TABLE q2_temperature: pass; matched cells=36
+TABLE q2_moisture: pass; matched cells=36
+TABLE q3_moisture: pass; matched cells=60
+TABLE q4_moisture: pass; matched cells=63
+
+Limitations:
+Text and geometry audit does not replace rendered-page visual inspection.
+Unknown author/school/team identifiers require human anonymity review.
+AI disclosure truthfulness and complete human review cannot be certified by this script.
+Table checks compare rendered strings with the supplied expected manifest; numerical model validity is outside scope.

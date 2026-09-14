@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\source\\environment_probe.py",
+    "--case",
+    "q3",
+    "--n",
+    "40",
+    "--scenario",
+    "all",
+    "--out",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\evidence\\environment"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 14.141657590866089,
+  "outputs": {
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_baseline_n40.json": "e81ce143ace27c4f876bf4888eaecf2fb8281ca57c610d4d3a9a0135660b3d31",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_baseline_n40.npz": "29a938ac77c7acfb3768079c9b928d53ac37ff325d0862867903063a2fca31b4",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_minus_1K_n40.json": "2176955d89f48c80a573121ea681812c6515cfbcef4c86196136336eb5161918",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_minus_1K_n40.npz": "a682b9bb940a45c274ae02ed4033239932f8d2b2b42345851601115323ed08b2",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_plus_1K_n40.json": "75062ccbe633eb93be06914447f34bf3f7fd26f823afe2bf5ce24591b143a445",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_plus_1K_n40.npz": "345cf746f25e01e10dc08b9538f5e538bb4c62c825c96a84ece0eb162981412f",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_minus_0p005_n40.json": "21e94bebeb396f84da7e3dffce753c3ec6bb4cd2d79894b68d1ee68f52971413",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_minus_0p005_n40.npz": "6e34d73f6caff868167d7cfc0197fe9a8dd16287af1829e856685cd76822a1f0",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_plus_0p005_n40.json": "7bbdd2577c45bebcc74c34876772ee2921a9b283a4c851e809fce583f8a611b2",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_plus_0p005_n40.npz": "0c3e118a803ae56cd8e0a0db8c6bc07c2f1ec75f55110efdaa0fe847b768353c"
+  }
+}

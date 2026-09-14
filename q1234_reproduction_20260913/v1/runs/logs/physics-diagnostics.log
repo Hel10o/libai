@@ -1,0 +1,134 @@
+{
+  "base_commit": "anonymous-code-snapshot",
+  "scope": "Algebra and saved-field quadrature only; no PDE integration, no new temperature or drying-time solution, no calibration.",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "sources": {
+    "q4_saved_field": {
+      "path": "q4_complete_delivery/v1/output/main.npz",
+      "sha256": "68488e8e1f470bcdcfe52ca157110bc057511af13dcc43b31c33572a87aff195"
+    },
+    "q1_saved_field": {
+      "path": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz",
+      "sha256": "1fcb9fe929d373992f3bf061456948d0c90e54c89649ceaa390b07b1ab32f63c"
+    },
+    "environment": {
+      "path": "q4_complete_delivery/v1/inputs/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    "radius_input": {
+      "path": "q4_complete_delivery/v1/inputs/attachment2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    "q4_model": {
+      "path": "q4_complete_delivery/v1/第四问模型与文献采用.md",
+      "sha256": "f9d14e5665de976d0d4f62d11ba1e1609206f95bbb5a2e8269492299a3327522"
+    },
+    "q4_source": {
+      "path": "q4_complete_delivery/v1/source/q4_spectral.py",
+      "sha256": "8a7d7d0e48c0c1d4db37427f7f1de7157611d69c57afcae851e174a57f4f4503"
+    },
+    "problem_text": {
+      "path": "readable/problem/fulltext.md",
+      "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b"
+    }
+  },
+  "script_sha256": "e7b4f806c47ae07e2f5a2542c0bbbaf0485c80c9cd44ba33d988de25a8b3cded",
+  "q4_future_environment_T_C": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "conditional_air_state_if_W_and_101_325kPa": {
+    "vapor_partial_pressure_kPa": 7.537940613427603,
+    "relative_humidity_using_FAO_eq11": 0.6110469610093179,
+    "qualification": "Only if the workbook kg/kg means water per dry air, with stated pressure. This is not a verified interpretation of the problem input."
+  },
+  "q4_density_contradiction_diagnostics": [
+    {
+      "time_s": 25200.0,
+      "radius_m": 0.01337,
+      "implied_dry_mass_ratio_nodal": 0.7195196363187153,
+      "implied_dry_mass_ratio_gauss384": 0.7195196363187146,
+      "gauss192_384_rho_d_integral_difference_kg_m3": 5.115907697472721e-13,
+      "length_for_global_mass_only_cm": 34.74540337482344,
+      "physical_rho_d_minmax_if_empirical_rho_real": [
+        359.86914196669653,
+        582.6262785530432
+      ],
+      "affine_material_rho_d_kg_m3": 623.712750369238,
+      "qualification": "Changing length alone preserves these saved C and R only diagnostically; not a recomputed model. Local consistency does not follow from global correction."
+    },
+    {
+      "time_s": 183931.56,
+      "radius_m": 0.012,
+      "implied_dry_mass_ratio_nodal": 0.8902908365015613,
+      "implied_dry_mass_ratio_gauss384": 0.8902908365015612,
+      "gauss192_384_rho_d_integral_difference_kg_m3": 1.1368683772161603e-13,
+      "length_for_global_mass_only_cm": 28.080711352976124,
+      "physical_rho_d_minmax_if_empirical_rho_real": [
+        672.60878625478,
+        726.5145665379656
+      ],
+      "affine_material_rho_d_kg_m3": 774.2566510172145,
+      "qualification": "Changing length alone preserves these saved C and R only diagnostically; not a recomputed model. Local consistency does not follow from global correction."
+    }
+  ],
+  "q4_conditional_latent_flux": [
+    {
+      "time_s": 21600.0,
+      "surface_T_degC": 49.998927631312306,
+      "surface_C": 0.4206825942811012,
+      "convective_heat_input_on_saved_temperature_W_m2": 0.00016987293012249438,
+      "conditional_material_water_flux_kg_m2_s": 0.0001751381464211687,
+      "conditional_latent_demand_at_2_45_MJ_kg_W_m2": 429.08845873186334
+    },
+    {
+      "time_s": 43200.0,
+      "surface_T_degC": 49.998934426221496,
+      "surface_C": 0.16694747164292464,
+      "convective_heat_input_on_saved_temperature_W_m2": 2.0037305148434825e-10,
+      "conditional_material_water_flux_kg_m2_s": 6.698003270376424e-05,
+      "conditional_latent_demand_at_2_45_MJ_kg_W_m2": 164.1010801242224
+    },
+    {
+      "time_s": 86400.0,
+      "surface_T_degC": 49.99893442622592,
+      "surface_C": 0.06732456430562032,
+      "convective_heat_input_on_saved_temperature_W_m2": 8.970602038971265e-11,
+      "conditional_material_water_flux_kg_m2_s": 1.0667409899951429e-05,
+      "conditional_latent_demand_at_2_45_MJ_kg_W_m2": 26.135154254881
+    },
+    {
+      "time_s": 172800.0,
+      "surface_T_degC": 49.99893442623549,
+      "surface_C": 0.05300226783617527,
+      "convective_heat_input_on_saved_temperature_W_m2": -1.495692458775011e-10,
+      "conditional_material_water_flux_kg_m2_s": 1.8673378532812108e-06,
+      "conditional_latent_demand_at_2_45_MJ_kg_W_m2": 4.574977740538967
+    }
+  ],
+  "q4_boundary_coefficient_scaling": {
+    "terminal_R_over_R0": 0.6,
+    "rho_d_and_per_area_K_C_multiplier_at_fixed_effective_hm": 2.777777777777778,
+    "total_mass_rate_multiplier_at_fixed_surface_C_difference": 1.6666666666666667,
+    "hypothetical_effective_hm_if_K_C_constant_m_s": 2.8799999999999993e-07,
+    "qualification": "Hypothetical hm is a sensitivity contract only; not a fitted or recommended replacement parameter."
+  },
+  "q1_conditional_energy_readback": {
+    "initial_dry_mass_kg": 0.07256636551953889,
+    "water_loss_kg": 0.018609122380912484,
+    "latent_J": 45592.34983323559,
+    "baseline_sensible_J": 4800.979302361747,
+    "baseline_convective_integral_J": 4800.978930016515,
+    "latent_over_baseline_sensible": 9.496468733120206,
+    "qualification": "rho=820 interpreted as initial wet density only; all effective moisture loss assumed evaporative; latent value is a scale diagnostic."
+  },
+  "assertions": {
+    "density_gauss192_384_close": true,
+    "q4_required_length_exceeds_initial_at_7h_and_end": true,
+    "rho_d_shape_not_spatially_uniform_at_7h": true
+  }
+}

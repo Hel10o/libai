@@ -1,4 +1,6 @@
-# libai
+# CUMCM26
+
+本轮按用户要求把仓库更名为 `CUMCM26`（原名 `libai`，GitHub 会把旧地址重定向到新名称），并完成支撑材料的独立复现验收。复现包在全新工作目录中仅用包内源码与题面附件重算四问主解、一维与二维几何对照、交换系数及后段环境情景：33 项任务退出码全为 0，六张题设表 261 个数值格逐格一致，导出工作簿 9,365,307 格读回无差异，论文对照与工作簿核对均通过，验收结论见[复现验收结果](q1234_reproduction_20260913/v1/package/支撑材料/复现验收结果.json)，运行方法见[复现说明](q1234_reproduction_20260913/v1/package/支撑材料/复现说明.md)。压缩提交包[A题_支撑材料_复现验收版.zip](q1234_reproduction_20260913/v1/out/A题_支撑材料_复现验收版.zip)为 110 个成员、11,530,032 字节，SHA-256 `58df39a70fd99051a532e885c569ea9ee865715cffd8e126048255799166c8c7`，全部成员已读回核对；[四问论文_复现验收版.pdf](q1234_reproduction_20260913/v1/out/四问论文_复现验收版.pdf)（171 页，正文与摘要前 30 页与论文初稿逐像素一致）本轮未改动，仍通过 37 项 PDF 检查。复现不改动模型与数值，第四问粗网格二维执行点仍略高于阈值，记录如实标注 `all_nodes_strictly_pass: false`，故本轮结论不构成有限圆柱连续全域的严格保证。
 
 本轮按用户要求把论文标题排到一行：摘要页标题原分两行（“考虑变物性与径向收缩的／圆柱药材干燥模型”），现排为一行，仍为22 pt居中，宽418 pt、在453 pt版心内，标题下照旧居中排“摘　要”。只改标题排版，未动摘要文字、其余章节、数值与图表；全157页像素比对仅第1页变化，其余156页一致。见[标题排版记录](paper/q1234_draft_v1/evidence/title_online_20260913/修订记录.md)。
 
@@ -105,12 +107,12 @@
 如果连续全文被截断，可按每篇论文的页码索引分批读取。复杂公式、表格和图像应对照原始PDF；提取文本不替代逐式核验。
 
 ```text
-请使用 GitHub 连接读取 Hel10o/libai 的 README.md，然后读取 readable/README.md。
+请使用 GitHub 连接读取 Hel10o/CUMCM26 的 README.md，然后读取 readable/README.md。
 按该索引打开题面和相关论文的 fulltext.md；若返回被截断，继续按 pages 目录逐页读取。
 引用时注明论文与 PDF 页码，不要把 PDF 下载指针、旧摘要或截断内容当作全文。
 ```
 
-仓库当前按所有者要求设为公开，名称为 `Hel10o/libai`，此前名为 `Hel10o/CUMCM26`。普通README也无法读取时，先核对仓库新名称和连接账号；如果以后改为私密，还需为连接单独授权。本地Git命令的登录权限与ChatGPT GitHub连接的权限需分别核对。
+仓库当前按所有者要求设为公开，名称为 `Hel10o/CUMCM26`，此前的 `Hel10o/libai` 由 GitHub 重定向到新名称。普通README也无法读取时，先核对仓库新名称和连接账号；如果以后改为私密，还需为连接单独授权。本地Git命令的登录权限与ChatGPT GitHub连接的权限需分别核对。
 
 ## 项目内容
 
@@ -120,6 +122,7 @@
 - [第一问交付说明](q1_complete_delivery/q1_delivery/README.md)。
 - [第一问结果Excel](q1_complete_delivery/q1_delivery/output/result1.xlsx)。
 - [最新四问论文初稿](paper/q1234_draft_v1/四问论文初稿_v1.pdf)及[编辑与构建入口](paper/q1234_draft_v1/README.md)。
+- [四问复现验收版论文](q1234_reproduction_20260913/v1/out/四问论文_复现验收版.pdf)、[复现验收记录](q1234_reproduction_20260913/v1/package/支撑材料/复现验收结果.json)及[复现验收压缩包](q1234_reproduction_20260913/v1/out/A题_支撑材料_复现验收版.zip)。
 - [历史论文部分稿：第一问与第二问](paper/q1_q2_stage/第一二问论文阶段稿.pdf)，[当时编辑与构建入口](paper/q1_q2_stage/README.md)。
 - [第一问论文阶段稿（保留历史版本）](paper/第一问论文阶段稿.pdf)。
 - [原交付第一问正文（保留历史版本）](q1_complete_delivery/q1_delivery/output/第一问论文正文.md)。

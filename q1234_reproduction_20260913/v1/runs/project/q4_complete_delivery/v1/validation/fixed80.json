@@ -1,0 +1,154 @@
+{
+  "n": 80,
+  "method": "Radau",
+  "rtol": 2e-10,
+  "atol_TC": [
+    2.0000000000000002e-11,
+    2e-12
+  ],
+  "max_step_s": 180.0,
+  "radius_interpolation": "fixed",
+  "future_environment": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "event": {
+    "critical_s": 467454.0990220198,
+    "critical_h": 129.84836083944992,
+    "preliminary_execution_s": 467454.24,
+    "preliminary_execution_max_C": 0.14999997391620337,
+    "critical_slope": -1.850204192478433e-07,
+    "root_extrema": {
+      "max_C": 0.15,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 2.015389059831967e-05
+    },
+    "radius_m": 0.02,
+    "length_m": 0.25,
+    "root_is_1d": true
+  },
+  "elapsed_s": 114.30072189999919,
+  "steps": 14518,
+  "nfev": 172307,
+  "nlu": 40352,
+  "max_boundary_residual": 4.845028458294598e-19,
+  "boundary_fallbacks": 0,
+  "rate_checks": [
+    {
+      "t_s": 21600.0,
+      "water_rate_residual": 4.472333961502706e-18,
+      "effective_heat_rate_residual": -2.4074884086289217e-08
+    },
+    {
+      "t_s": 43200.0,
+      "water_rate_residual": 9.215718466126788e-19,
+      "effective_heat_rate_residual": 2.2258596115850315e-08
+    },
+    {
+      "t_s": 64800.0,
+      "water_rate_residual": -1.6771252355635147e-19,
+      "effective_heat_rate_residual": 7.665137099728518e-11
+    },
+    {
+      "t_s": 86400.0,
+      "water_rate_residual": -1.3383120566617945e-19,
+      "effective_heat_rate_residual": -1.2413020740609747e-09
+    },
+    {
+      "t_s": 108000.0,
+      "water_rate_residual": 1.232432938255007e-19,
+      "effective_heat_rate_residual": 1.2494213704000328e-08
+    },
+    {
+      "t_s": 129600.0,
+      "water_rate_residual": 3.134021904840911e-20,
+      "effective_heat_rate_residual": 4.719743401840888e-09
+    },
+    {
+      "t_s": 151200.0,
+      "water_rate_residual": -1.6940658945086007e-20,
+      "effective_heat_rate_residual": -1.2534012531426779e-08
+    },
+    {
+      "t_s": 172800.0,
+      "water_rate_residual": 1.7152417181899582e-20,
+      "effective_heat_rate_residual": 3.0864290573968345e-09
+    },
+    {
+      "t_s": 194400.0,
+      "water_rate_residual": -1.418780186650953e-20,
+      "effective_heat_rate_residual": -8.580290814471885e-09
+    },
+    {
+      "t_s": 216000.0,
+      "water_rate_residual": -2.3822801641527197e-20,
+      "effective_heat_rate_residual": 7.133038688104209e-09
+    },
+    {
+      "t_s": 237600.0,
+      "water_rate_residual": 1.2811373327221293e-20,
+      "effective_heat_rate_residual": -7.894809194533783e-09
+    },
+    {
+      "t_s": 259200.0,
+      "water_rate_residual": -8.470329472543003e-21,
+      "effective_heat_rate_residual": 1.1033472576738209e-08
+    },
+    {
+      "t_s": 280800.0,
+      "water_rate_residual": -1.2176098616780567e-20,
+      "effective_heat_rate_residual": 5.631221447021936e-09
+    },
+    {
+      "t_s": 302400.0,
+      "water_rate_residual": 1.1276126110322873e-20,
+      "effective_heat_rate_residual": 1.1744013484904523e-08
+    },
+    {
+      "t_s": 324000.0,
+      "water_rate_residual": -7.940933880509066e-22,
+      "effective_heat_rate_residual": -3.7657543062517615e-09
+    },
+    {
+      "t_s": 345600.0,
+      "water_rate_residual": 2.6469779601696886e-21,
+      "effective_heat_rate_residual": 9.693367856247479e-09
+    },
+    {
+      "t_s": 367200.0,
+      "water_rate_residual": 1.6940658945086007e-21,
+      "effective_heat_rate_residual": -1.101981131783499e-08
+    },
+    {
+      "t_s": 388800.0,
+      "water_rate_residual": -1.0323214044661785e-21,
+      "effective_heat_rate_residual": -1.0563596431468149e-08
+    },
+    {
+      "t_s": 410400.0,
+      "water_rate_residual": 6.485096002415737e-21,
+      "effective_heat_rate_residual": 1.1807011454233748e-08
+    },
+    {
+      "t_s": 432000.0,
+      "water_rate_residual": 1.4293680984916318e-21,
+      "effective_heat_rate_residual": 1.4238207180557685e-08
+    },
+    {
+      "t_s": 453600.0,
+      "water_rate_residual": -4.896909226313924e-21,
+      "effective_heat_rate_residual": 3.21255178422655e-09
+    },
+    {
+      "t_s": 467454.24,
+      "water_rate_residual": 7.146840492458159e-22,
+      "effective_heat_rate_residual": 1.7186211663653315e-08
+    }
+  ],
+  "mass_balance_max_abs_in_mean_C": null,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "python": "3.13.14",
+  "source_sha256": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6"
+}

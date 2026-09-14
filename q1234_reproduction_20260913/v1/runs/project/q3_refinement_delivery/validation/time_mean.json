@@ -1,0 +1,162 @@
+{
+  "model": "global Chebyshev collocation in x=(r/R)^2 with primitive-gradient moisture flux",
+  "n": 80,
+  "method": "Radau",
+  "rtol": 2e-11,
+  "atol_C": 2e-13,
+  "max_step_s": 120.0,
+  "scenario": "time_mean",
+  "interpolation": "linear",
+  "future": [
+    49.99591666666667,
+    0.04999041666666666
+  ],
+  "event": {
+    "critical_s": 206926.43284373378,
+    "critical_h": 57.47956467881494,
+    "t_minus_s": 206926.42284373377,
+    "max_minus": 0.15000000291244409,
+    "critical_max": 0.15,
+    "t_plus_s": 206926.4428437338,
+    "max_plus": 0.14999999708755618,
+    "critical_slope_kgkg_s": -2.912443949851901e-07,
+    "execution_s": 206926.56,
+    "execution_h": 57.4796,
+    "execution_max": 0.14999996296647192,
+    "execution_argmax_x": 0.0,
+    "strict_execution_pass": true,
+    "budget_s": 0.03,
+    "quantum_s": 0.36
+  },
+  "elapsed_s": 78.79992199999833,
+  "nsteps": 17723,
+  "nfev": 203075,
+  "nlu": 41174,
+  "min_scalar_boundary_derivative": 2.087899899643395e-06,
+  "max_boundary_residual": 2.97816784254612e-18,
+  "max_boundary_newton": 5,
+  "boundary_fallbacks": 0,
+  "extrema": [
+    {
+      "t_s": 1800.0,
+      "max_C": 2.549934100212318,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.8153213735807476
+    },
+    {
+      "t_s": 3600.0,
+      "max_C": 2.5257376140978933,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.6823210320140075
+    },
+    {
+      "t_s": 5400.0,
+      "max_C": 2.386064262850679,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.5925751937181247
+    },
+    {
+      "t_s": 7200.0,
+      "max_C": 2.170851543190055,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.5104323966657265
+    },
+    {
+      "t_s": 9000.0,
+      "max_C": 1.9566417571368104,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.43244858607735603
+    },
+    {
+      "t_s": 10800.0,
+      "max_C": 1.7661771010352592,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.36141801903821474
+    },
+    {
+      "t_s": 14400.0,
+      "max_C": 1.4536060033462617,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.24390154414188925
+    },
+    {
+      "t_s": 21600.0,
+      "max_C": 1.0169942119861233,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.09990788166894107
+    },
+    {
+      "t_s": 43200.0,
+      "max_C": 0.45617492926975123,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.002405346222117112
+    },
+    {
+      "t_s": 64800.0,
+      "max_C": 0.2988600539983482,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 5.7797071231857275e-05
+    },
+    {
+      "t_s": 86400.0,
+      "max_C": 0.2378123430861819,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 8.891660368061903e-06
+    },
+    {
+      "t_s": 108000.0,
+      "max_C": 0.20583424816139825,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 3.4692047931306723e-06
+    },
+    {
+      "t_s": 129600.0,
+      "max_C": 0.18588655725911787,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 2.054476965693535e-06
+    },
+    {
+      "t_s": 151200.0,
+      "max_C": 0.1720737957161889,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.4933715298010453e-06
+    },
+    {
+      "t_s": 172800.0,
+      "max_C": 0.16183441134527152,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.212297037956082e-06
+    },
+    {
+      "t_s": 194400.0,
+      "max_C": 0.15387345702078836,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.0496139519305643e-06
+    },
+    {
+      "t_s": 206926.56,
+      "max_C": 0.14999996296647192,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.843809929448643e-07
+    }
+  ],
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "source_sha256": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda"
+}

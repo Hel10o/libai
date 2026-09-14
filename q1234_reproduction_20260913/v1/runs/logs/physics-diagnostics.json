@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\reviews\\physics\\diagnose_saved_fields.py"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 1.031625747680664,
+  "outputs": {
+    "project/q1234_overall_review_delivery/v1/reviews/physics/saved_field_physics_diagnostics.json": "b3a64b49d9d127c774d60a3bf5a88b28fbc86a99591ae1079ad63d5004c3f51b"
+  }
+}

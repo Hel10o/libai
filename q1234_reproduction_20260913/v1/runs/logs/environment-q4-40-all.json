@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\source\\environment_probe.py",
+    "--case",
+    "q4",
+    "--n",
+    "40",
+    "--scenario",
+    "all",
+    "--out",
+    "<OUTPUT>\\project\\q1234_overall_review_delivery\\v1\\evidence\\environment"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 14.498207092285156,
+  "outputs": {
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_baseline_n40.json": "81fbf0ea154dab46e4a791bd9eb1c12d686c7d85349a66a2b72438493ccce115",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_baseline_n40.npz": "5fce6adb2221386b62b9ffec235f2feabf75120e492ca8efe43e8cc4ca74e193",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_minus_1K_n40.json": "dd2c82b7eb08f4ef559d84f3697a8cf775504ca6e1c47c008328ac4e7b32fc0a",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_minus_1K_n40.npz": "4629bb01cbb5c8aaeefaed68e753ce430020e60174992c223fad4cb331560601",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_plus_1K_n40.json": "f5e06e51ea3edfd125ae5d0560f69955c0e4663bd2667eded0e7fad298f0892b",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_plus_1K_n40.npz": "a60fa0d083d1ca790ad464085785a18c6ba8d7e9cd843105b5dc83d02dd0ca03",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_minus_0p005_n40.json": "27764b7191873fe31deaae2a4d8d2e369370389f84b0e7cf4d60f7b29d4f9456",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_minus_0p005_n40.npz": "bd6e104a6483d463d545f3c6141b1fa33caf72b21a0474da92d7acf980fb531a",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_plus_0p005_n40.json": "42787fbe70e9e14b8c408b9c95e321f02c9a89cbb6e11c84ea24d769778a1dbe",
+    "project/q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_plus_0p005_n40.npz": "5290515f324b733dc2391c85e290124704b39e9a484dfe6dd589dc42c3a0dadb"
+  }
+}

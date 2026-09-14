@@ -1,0 +1,6 @@
+numpy==2.3.5
+scipy==1.17.0
+matplotlib>=3.9,<4
+# The delivered XLSX was exported using artifact_tool, preinstalled in the run environment.
+# It is optional for local execution: q1_excel.py contains a stdlib OOXML fallback.
+# That fallback is supplied for portability but was NOT runtime-tested in this delivery.

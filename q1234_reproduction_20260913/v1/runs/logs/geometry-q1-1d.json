@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\geometry_solver.py",
+    "--case",
+    "q1",
+    "--nr",
+    "80",
+    "--nz",
+    "0",
+    "--flux",
+    "harmonic",
+    "--rtol",
+    "2e-9",
+    "--max-step",
+    "240",
+    "--input-dir",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\inputs",
+    "--out-dir",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\validation\\geometry"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 1.4600818157196045,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/geometry/q1_80x0.json": "586460f70fb15c4322b9b09c0dcee0c048025b462de0c73ce1f2f2cc3feac60c",
+    "project/q4_complete_delivery/v1/validation/geometry/q1_80x0.npz": "aef2c2fbc430c93439f7e4f1c88d9b1256699598235683ff8e1adf0bd0ebe868"
+  }
+}

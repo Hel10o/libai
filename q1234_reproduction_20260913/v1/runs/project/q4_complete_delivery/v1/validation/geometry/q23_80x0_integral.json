@@ -1,0 +1,37 @@
+{
+  "case": "q23",
+  "nr": 80,
+  "nz": 0,
+  "grading": 2.0,
+  "zgrading": 2.0,
+  "shrink": false,
+  "end_transfer": true,
+  "rtol": 2e-09,
+  "atol_T": 1e-09,
+  "atol_C": 1e-11,
+  "max_step": 240.0,
+  "nfev": 23750,
+  "njev": 254,
+  "nlu": 3306,
+  "flux": "integral local coefficients, vertex dual finite volumes",
+  "temperature": "coupled throughout; no isothermal projection",
+  "environment_future": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "source_sha": "anonymous-source",
+  "elapsed_s": 19.785948899999767,
+  "event_root_s": 206909.44920945674,
+  "end_s": 206909.44920945674,
+  "end_max_C": 0.15,
+  "end_max_location_r_z_m": [
+    0.0,
+    0.0
+  ],
+  "event_bracket_Cmax": [
+    0.15000029127379746,
+    0.15,
+    0.14999970872921525
+  ],
+  "source_sha256": "b63aaa9f35544d25738d3158a06e30b0a3f47a24d7422b1c39618c0fa578496b"
+}

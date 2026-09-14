@@ -1,0 +1,32 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\q123_closeout\\source\\solve_unified_q23.py",
+    "--input",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\q123_closeout\\inputs\\attachment1.xlsx",
+    "--out",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\q123_closeout\\output\\q23_unified",
+    "--n",
+    "80",
+    "--method",
+    "Radau",
+    "--rtol",
+    "2e-13",
+    "--max-step",
+    "30",
+    "--step",
+    "1",
+    "--end",
+    "206906.76"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 439.6637647151947,
+  "outputs": {
+    "project/q4_complete_delivery/v1/q123_closeout/output/q23_unified.json": "2a18fe9b4732013e657083006db1d53109a0122eaf6cd5ec0973ad46f3570dd3",
+    "project/q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz": "5525872ca7b912c293067ff6f65c082c0321cefa3292c8a8a826245d954231d3"
+  }
+}

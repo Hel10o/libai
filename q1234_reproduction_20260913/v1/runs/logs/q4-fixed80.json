@@ -1,0 +1,28 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\run_q4.py",
+    "--out",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\validation\\fixed80",
+    "--n",
+    "80",
+    "--kind",
+    "fixed",
+    "--method",
+    "Radau",
+    "--rtol",
+    "2e-10",
+    "--max-step",
+    "180"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 116.49245119094849,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/fixed80.json": "95f3f29b397a046789b168e49c7ef193505dbebe2c591bef315098922ead3c51",
+    "project/q4_complete_delivery/v1/validation/fixed80.npz": "ffd5ce4e012b9a77e1a9bbec26c0f7d2614aa868c2200d50998b6b7bfa54aa8f"
+  }
+}

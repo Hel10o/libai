@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\check_numerics.py",
+    "--base",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 2.128484010696411,
+  "outputs": {
+    "project/q4_complete_delivery/v1/validation/numeric_comparison.json": "45f26ccf366cd78a670c5dac3f2353c2027a9ea967a80e59223530ff8d578113"
+  }
+}

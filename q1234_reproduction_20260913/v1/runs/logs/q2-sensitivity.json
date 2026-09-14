@@ -1,0 +1,22 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\package\\支撑材料\\reproduction\\supplement.py",
+    "--root",
+    "<OUTPUT>\\project",
+    "--out",
+    "<OUTPUT>\\project\\q2_refinement_delivery\\reproduced_sensitivity",
+    "--case",
+    "q2-sensitivity"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 49.02018737792969,
+  "outputs": {
+    "project/q2_refinement_delivery/reproduced_sensitivity/sensitivity.json": "eb26d01dc068c6cc7675baf167e49594d4843ac910c1e1c3560dae1e76315296",
+    "project/q2_refinement_delivery/reproduced_sensitivity/sensitivity_baseline.npz": "97872b1b947c44d713edbf40715b125d3fddee2f792aceaa400de80ca5af4749"
+  }
+}

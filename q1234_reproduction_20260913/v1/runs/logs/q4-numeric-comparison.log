@@ -1,0 +1,60 @@
+{
+  "main": "output/main.npz",
+  "comparisons": {
+    "spectral80": {
+      "status": "actual saved run read",
+      "common_times": 3067,
+      "max_abs_T_C": 2.1048407461421448e-09,
+      "max_abs_C": 8.007328133885494e-11,
+      "four_decimal_mismatch_count_TC": 0,
+      "root_difference_s": -2.0576408132910728e-07
+    },
+    "spectral160": {
+      "status": "actual saved run read",
+      "common_times": 3067,
+      "max_abs_T_C": 3.242988100282673e-10,
+      "max_abs_C": 1.0253131677018246e-11,
+      "four_decimal_mismatch_count_TC": 0,
+      "root_difference_s": 1.7083948478102684e-08
+    },
+    "time120_bdf": {
+      "status": "actual saved run read",
+      "common_times": 3067,
+      "max_abs_T_C": 1.8410233337817772e-09,
+      "max_abs_C": 3.147133109671074e-10,
+      "four_decimal_mismatch_count_TC": 0,
+      "root_difference_s": -0.0006089185480959713
+    }
+  },
+  "main_mass_balance_max_mean_C": 5.049294315995212e-13,
+  "main_max_boundary_residual": 1.0846256889591316e-18,
+  "main_total_loss_per_unit_dry_mass": 2.431595578206289,
+  "main_end_mean_C": 0.11840442179371119,
+  "domain_masks": {
+    "outside_count": 23165,
+    "outside_are_nan": true,
+    "inside_are_finite": true
+  },
+  "independent_fv": {
+    "path": "validation\\geometry\\q4_640x0_integral_rtol2e-11.npz",
+    "common_times": 3066,
+    "coordinate": "matched material xi=0:.05:1, not fixed physical r",
+    "max_abs_T": 2.505338638769672e-06,
+    "max_abs_C": 1.5829063625183437e-05,
+    "last_pair_extrapolation_is_estimate": true
+  },
+  "surface_fixed_coincidence": {
+    "count": 968,
+    "max_abs_C_difference": 0.0
+  },
+  "polynomial_maximum": {
+    "max_C_minus_axis_C": 1.3322676295501878e-15,
+    "root_extrema": {
+      "max_C": 0.14999999999999997,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 2.345904100711782e-05
+    },
+    "early_argmax_note": "nearly uniform profiles have floating-point nonunique locations"
+  }
+}

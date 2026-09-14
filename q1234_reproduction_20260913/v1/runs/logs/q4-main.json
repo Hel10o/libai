@@ -1,0 +1,29 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\source\\run_q4.py",
+    "--out",
+    "<OUTPUT>\\project\\q4_complete_delivery\\v1\\output\\main",
+    "--n",
+    "120",
+    "--kind",
+    "linear",
+    "--method",
+    "Radau",
+    "--rtol",
+    "2e-11",
+    "--max-step",
+    "90",
+    "--audit"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 285.4949369430542,
+  "outputs": {
+    "project/q4_complete_delivery/v1/output/main.json": "475450f5e85cac4b2e77581a8d1bfecee2d16499b430d24ec3cd4aa04a971965",
+    "project/q4_complete_delivery/v1/output/main.npz": "68488e8e1f470bcdcfe52ca157110bc057511af13dcc43b31c33572a87aff195"
+  }
+}

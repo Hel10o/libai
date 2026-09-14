@@ -1,0 +1,36 @@
+{
+  "command": [
+    "D:\\Desktop\\CUMCM26\\q1234_reproduction_20260913\\v1\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "<OUTPUT>\\project\\q3_refinement_delivery\\source\\q3_refined_reference.py",
+    "--input",
+    "<OUTPUT>\\project\\q3_refinement_delivery\\inputs\\attachment1.xlsx",
+    "--out",
+    "<OUTPUT>\\project\\q3_refinement_delivery\\output\\solution",
+    "--n",
+    "80",
+    "--scenario",
+    "mean",
+    "--method",
+    "Radau",
+    "--rtol",
+    "2e-11",
+    "--atol-c",
+    "2e-13",
+    "--max-step",
+    "120",
+    "--budget-s",
+    "0.03",
+    "--quantum-s",
+    "0.36"
+  ],
+  "source_signature": "e09fde732731c96102c6bcaeebf26417f3848c999367b39c9a3705e3dcde0557",
+  "returncode": 0,
+  "elapsed_s": 98.35064148902893,
+  "outputs": {
+    "project/q3_refinement_delivery/output/solution.json": "eb393f81d4ae8f2cd47daa9a363db59bcd1ce1e3c10744c7053ae7cde61c4b7b",
+    "project/q3_refinement_delivery/output/solution.npz": "6b33e5eba2d8f1dec662534962c63a435deb125bbba3c421f272e2c48bbce72e"
+  }
+}
